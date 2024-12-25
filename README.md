@@ -36,7 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## packages to be installed
-```json
+```
 "dependencies": {
 "@emotion/react": "^11.14.0",
 "@emotion/styled": "^11.14.0",
@@ -53,9 +53,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 "react-icons": "^5.4.0",
 "uuid": "^11.0.3"
 },
-
+```
 ## tsconfig.json
-```json
+ 
+```
 {
 "compilerOptions": {
 "lib": ["dom", "dom.iterable", "esnext"],
@@ -82,9 +83,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
 "exclude": ["node_modules"]
 }
-
+```
 ## tailwind.config.ts
-```tsx
+
+```
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -126,6 +128,7 @@ DEFAULT: "#808080",
 plugins: [],
 };
 export default config;
+```
 
 ## folder structre
 
@@ -138,8 +141,7 @@ public
 ## lib folder has axios file axiosInstance
 
 ## axiosInstance.tsx
-
-```tsx
+``` 
 import axios from "axios";
 import { cookies } from "next/headers";
 
@@ -194,15 +196,16 @@ axiosInstance.interceptors.response.use(
 );
 
 export default axiosInstance;
+```
 
 ## app folder contains structure of routing
 
-group router (with-layout)
-login ( default router )
-global files ( layout , error , loading , not-found , unauthorized)
+## group router (with-layout)
+## login ( default router )
+## global files ( layout , error , loading , not-found , unauthorized)
 
 ## layout.tsx in app file
-```tsx
+```
 import type { Metadata } from "next";
 import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
@@ -228,9 +231,11 @@ export default function RootLayout({ children }: Readonly<LayoutProps>) {
     </html>
   );
 }
+```
 
 ## loading.tsx in app file
-```tsx
+
+``` 
 "use client";
 export default function Loading() {
   return (
@@ -242,9 +247,9 @@ export default function Loading() {
     </div>
   );
 }
-
+```
 ## not-found.tsx in app file
-```tsx
+``` 
 "use client";
 
 export default function NotFound() {
@@ -265,9 +270,10 @@ export default function NotFound() {
     </div>
   );
 }
-
+```
 ## unauthorized.tsx in app file
-```tsx
+
+```
 "use client";
 
 export default function Unauthorized() {
@@ -288,6 +294,7 @@ export default function Unauthorized() {
     </div>
   );
 }
+```
 
 ## app folder structure
 
@@ -298,7 +305,8 @@ export default function Unauthorized() {
 ## (with-layout) has group route home and layout.tsx
 
 ## layout.tsx
-```tsx
+
+```
 import { ReactNode } from "react";
 
 export default function WithLayout({ children }: { children: ReactNode }) {
@@ -310,11 +318,12 @@ export default function WithLayout({ children }: { children: ReactNode }) {
     </div>
   );
 }
+```
 
 ## (home) has page.tsx
 
 ## page.tsx
-```tsx
+```
 import Image from "next/image";
 
 export default function Home() {
@@ -324,9 +333,9 @@ export default function Home() {
     </main>
   );
 }
-
+```
 ## login route has page.tsx
-```tsx
+``` 
 "use client";
 
 import AuthImage from "@/components/routes/login/AuthImage";
@@ -351,7 +360,7 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
+```
 ## components folder structure
 
 ## components folder contains the following folder ( layout , routes , ui )
@@ -359,7 +368,8 @@ export default LoginPage;
 ## layout folder contains Language.tsx
 
 ## Language.tsx
-```tsx
+
+``` 
 "use client";
 import React, { useState } from "react";
 import { TbWorld } from "react-icons/tb";
@@ -418,6 +428,7 @@ const Language = () => {
 };
 
 export default Language;
+```
 
 ## routes folder
 
@@ -426,7 +437,7 @@ export default Language;
 ## login folder contains the following files ( AuthImage , LoginFooter , LoginHeader )
 
 ## AuthImage.tsx
-```tsx
+```
 import Image from "next/image";
 import React from "react";
 
@@ -447,9 +458,10 @@ const AuthImage = () => {
 };
 
 export default AuthImage;
+```
 
 ## LoginFooter.tsx
-```tsx
+```
 import Link from "next/link";
 import React from "react";
 
@@ -468,9 +480,10 @@ const LoginFooter = () => {
 };
 
 export default LoginFooter;
+```
 
 ## LoginHeader.tsx
-```tsx
+```
 import Language from "@/components/layout/Language";
 import Image from "next/image";
 import React from "react";
@@ -491,13 +504,15 @@ const LoginHeader = () => {
 };
 
 export default LoginHeader;
+```
 
 ## ui folder
 
 ## ui folder has the following files ( inputEmail , inputError , inputFile , inputLabel, inputPassword , inputText , inputTextArea )
 
 ## inputEmail.tsx
-```tsx
+
+```
 "use client";
 import { FC } from "react";
 import { useFormContext } from "react-hook-form";
@@ -534,9 +549,10 @@ const InputEmail: FC<IProps> = (props) => {
 };
 
 export default InputEmail;
+```
 
 ## inputError.tsx
-```tsx
+```
 import React, { FC } from "react";
 
 const InputError: FC<{ error: string | undefined }> = ({ error }) => {
@@ -545,9 +561,10 @@ const InputError: FC<{ error: string | undefined }> = ({ error }) => {
 };
 
 export default InputError;
+```
 
 ## InputFile.tsx
-```tsx
+```
 import { FC, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { FiUpload } from "react-icons/fi";
@@ -607,9 +624,11 @@ const InputFile: FC<IProps> = (props) => {
 };
 
 export default InputFile;
+```
 
 ## InputLabel.tsx
-```tsx
+
+```
 import React, { FC } from "react";
 
 const InputLabel: FC<{ name: string; label: string }> = (props) => {
@@ -624,10 +643,11 @@ const InputLabel: FC<{ name: string; label: string }> = (props) => {
 };
 
 export default InputLabel;
+```
 
 ## InputPassword.tsx
 
-```tsx
+```
 "use client";
 import React, { FC, useState } from "react";
 import { useFormContext } from "react-hook-form";
@@ -742,10 +762,11 @@ const ConfirmRules: FC<{ isConfirmed: boolean }> = (props) => {
 };
 
 export default InputPassword;
+```
 
 ## InputText.tsx
 
-```tsx
+```
 "use client";
 import { FC } from "react";
 import { useFormContext } from "react-hook-form";
@@ -782,10 +803,11 @@ const InputText: FC<IProps> = (props) => {
 };
 
 export default InputText;
+```
 
 ## InputTextArea.tsx
 
-```tsx
+```
 "use client";
 import { FC } from "react";
 import { useFormContext } from "react-hook-form";
@@ -819,4 +841,4 @@ const InputTextArea: FC<IProps> = (props) => {
 };
 
 export default InputTextArea;
- 
+```
