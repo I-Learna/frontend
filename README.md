@@ -784,7 +784,7 @@ export default InputText;
 
 ## InputTextArea.tsx
 
-
+<>
 "use client";
 import { FC } from "react";
 import { useFormContext } from "react-hook-form";
@@ -818,3 +818,4 @@ const InputTextArea: FC<IProps> = (props) => {
 };
 
 export default InputTextArea;
+</>
