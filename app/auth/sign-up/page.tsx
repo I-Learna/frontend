@@ -4,6 +4,7 @@ import InputEmail from "@/components/ui/InputEmail";
 import InputFile from "@/components/ui/InputFile";
 import InputPassword from "@/components/ui/InputPassword";
 import InputText from "@/components/ui/InputText";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
@@ -128,22 +129,28 @@ const SignUp = () => {
 
       <div className="flex space-x-10 justify-center">
         <button>
-          <img
+          <Image
             src="/images/social-media/google.svg"
+            width={10}
+            height={10}
             alt="Google"
             className="w-8 h-8"
           />
         </button>
         <button>
-          <img
+          <Image
             src="/images/social-media/facebook.png"
+            width={10}
+            height={10}
             alt="Google"
             className="w-8 h-8"
           />
         </button>
         <button>
-          <img
+          <Image
             src="/images/social-media/linkedin.png"
+            width={10}
+            height={10}
             alt="Google"
             className="w-8 h-8"
           />
