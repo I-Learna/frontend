@@ -1,0 +1,26 @@
+[
+  {
+    "sortLabel": "Highest to Lowest Rate",
+    "sortCode": "hlr"
+  },
+  {
+    "sortLabel": "Lowest to Highest Rate",
+    "sortCode": "lhr"
+  },
+  {
+    "sortLabel": "Highest to Lowest Price",
+    "sortCode": "hlp"
+  },
+  {
+    "sortLabel": "Lowest to Highest Price",
+    "sortCode": "lhp"
+  },
+  {
+    "sortLabel": "Newest to Oldest",
+    "sortCode": "newest"
+  },
+  {
+    "sortLabel": "Oldest to Newest",
+    "sortCode": "oldest"
+  }
+]

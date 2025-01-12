@@ -1,0 +1,21 @@
+[
+  {
+    "courseId": 1,
+    "courseTitle": "Fundamentals of Oil Refining",
+    "courseDescription": "Learn the basics of refining with real-world examples",
+    "coursePrice": {
+      "currency": "$",
+      "amount": 59.99,
+      "oldAmount": 69.99
+    },
+    "courseRate": 4.8,
+    "courseImage": "course1.jpg",
+    "courseDuration": {
+      "duration": "2 Hours",
+      "description": "Weekly for 4 weeks",
+      "startDate": "30/12/2024",
+      "startTime": "05:00 PM"
+    },
+    "courseLevel": "Expert"
+  }
+]

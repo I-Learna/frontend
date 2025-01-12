@@ -1,0 +1,70 @@
+[
+  {
+    "categoryLabel": "Industry",
+    "categoryCode": "industry",
+    "options": [
+      {
+        "optionLabel": "Oil and Gas",
+        "optionCode": "oil_and_gas"
+      },
+      {
+        "optionLabel": "Petrochemicals",
+        "optionCode": "petrochemicals"
+      },
+      {
+        "optionLabel": "Chemicals",
+        "optionCode": "chemicals"
+      }
+    ]
+  },
+  {
+    "categoryLabel": "Discipline",
+    "categoryCode": "discipline",
+    "options": [
+      {
+        "optionLabel": "Process Safety",
+        "optionCode": "process_safety"
+      },
+      {
+        "optionLabel": "HSE",
+        "optionCode": "hse"
+      },
+      {
+        "optionLabel": "Production",
+        "optionCode": "production"
+      }
+    ]
+  },
+  {
+    "categoryLabel": "Skill Level",
+    "categoryCode": "skill_level",
+    "options": [
+      {
+        "optionLabel": "Basic",
+        "optionCode": "basic"
+      },
+      {
+        "optionLabel": "Advanced",
+        "optionCode": "advanced"
+      },
+      {
+        "optionLabel": "Expert",
+        "optionCode": "expert"
+      }
+    ]
+  },
+  {
+    "categoryLabel": "Language",
+    "categoryCode": "language",
+    "options": [
+      {
+        "optionLabel": "English",
+        "optionCode": "english"
+      },
+      {
+        "optionLabel": "Arabic",
+        "optionCode": "arabic"
+      }
+    ]
+  }
+]

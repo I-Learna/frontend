@@ -18,10 +18,14 @@ const config: Config = {
           DEFAULT: "#00222C",
         },
         accent: {
+          lighter: "#F3FAFA",
           light: "#7BC8EC",
           DEFAULT: "#43B1E4",
           dark: "#368EB6",
           darker: "#1B475B",
+        },
+        warning: {
+          DEFAULT: "#ECF494",
         },
         error: {
           DEFAULT: "#D00000",

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "title": "fundamentals of oil refining",
+    "duration": "10 hours",
+    "durationDesc": "5 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.5,
+    "price": "100",
+    "oldPrice": "150",
+    "description": "last update 12/06/2024"
+  },
+  {
+    "id": "2",
+    "title": "advanced oil refining techniques",
+    "duration": "12 hours",
+    "durationDesc": "6 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.7,
+    "price": "120",
+    "oldPrice": "180",
+    "description": "last update 01/07/2024"
+  },
+  {
+    "id": "3",
+    "title": "introduction to petrochemicals",
+    "duration": "8 hours",
+    "durationDesc": "4 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.3,
+    "price": "90",
+    "oldPrice": "130",
+    "description": "last update 15/05/2024"
+  },
+  {
+    "id": "4",
+    "title": "petroleum engineering basics",
+    "duration": "15 hours",
+    "durationDesc": "7 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.8,
+    "price": "150",
+    "oldPrice": "200",
+    "description": "last update 20/06/2024"
+  },
+  {
+    "id": "5",
+    "title": "oil and gas exploration",
+    "duration": "9 hours",
+    "durationDesc": "5 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.6,
+    "price": "110",
+    "oldPrice": "160",
+    "description": "last update 10/06/2024"
+  },
+  {
+    "id": "6",
+    "title": "energy management in oil industry",
+    "duration": "11 hours",
+    "durationDesc": "5 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.4,
+    "price": "105",
+    "oldPrice": "155",
+    "description": "last update 05/06/2024"
+  },
+  {
+    "id": "7",
+    "title": "sustainable oil production",
+    "duration": "13 hours",
+    "durationDesc": "6 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.9,
+    "price": "130",
+    "oldPrice": "180",
+    "description": "last update 25/06/2024"
+  },
+  {
+    "id": "8",
+    "title": "oil refining safety protocols",
+    "duration": "7 hours",
+    "durationDesc": "3 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.2,
+    "price": "85",
+    "oldPrice": "120",
+    "description": "last update 30/06/2024"
+  },
+  {
+    "id": "9",
+    "title": "global oil market trends",
+    "duration": "14 hours",
+    "durationDesc": "7 sessions",
+    "image": "/images/plan.webp",
+    "rating": 4.7,
+    "price": "140",
+    "oldPrice": "190",
+    "description": "last update 18/06/2024"
+  }
+]
