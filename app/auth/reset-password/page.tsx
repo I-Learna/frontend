@@ -22,7 +22,7 @@ const ResetPassword = () => {
       </h2>
 
       <p className="text-customGray mb-6">
-        Enter your new password below to complete the reset process. Ensure it's
+        Enter your new password below to complete the reset process. Ensure it s
         strong and secure.
       </p>
 

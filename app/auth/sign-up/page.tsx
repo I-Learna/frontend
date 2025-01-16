@@ -23,9 +23,7 @@ const SignUp = () => {
   const formMethods = useForm<FormValues>();
   const { handleSubmit } = formMethods;
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log("Form Data:", data);
-  };
+  const onSubmit: SubmitHandler<FormValues> = (data) => {};
 
   return (
     <div className="mt-6 font-semibold">

@@ -1,8 +1,8 @@
+import RatingRO from "@/components/ui/RatingRO";
 import Image from "next/image";
 import React, { FC } from "react";
 import { BiBookAlt } from "react-icons/bi";
 import { CgSandClock } from "react-icons/cg";
-import RatingRO from "../ui/RatingRO";
 
 interface ItemCardProps {
   baseHref: string;

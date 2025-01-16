@@ -1,21 +1,101 @@
 [
   {
-    "courseId": 1,
-    "courseTitle": "Fundamentals of Oil Refining",
-    "courseDescription": "Learn the basics of refining with real-world examples",
-    "coursePrice": {
-      "currency": "$",
-      "amount": 59.99,
-      "oldAmount": 69.99
-    },
-    "courseRate": 4.8,
-    "courseImage": "course1.jpg",
-    "courseDuration": {
-      "duration": "2 Hours",
-      "description": "Weekly for 4 weeks",
-      "startDate": "30/12/2024",
-      "startTime": "05:00 PM"
-    },
-    "courseLevel": "Expert"
+    "id": "1",
+    "title": "fundamentals of oil refining",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.5,
+    "price": "100",
+    "oldPrice": "150",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "2",
+    "title": "advanced oil refining techniques",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.7,
+    "price": "120",
+    "oldPrice": "180",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "3",
+    "title": "introduction to petrochemicals",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.3,
+    "price": "90",
+    "oldPrice": "130",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "4",
+    "title": "petroleum engineering basics",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.8,
+    "price": "150",
+    "oldPrice": "200",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "5",
+    "title": "oil and gas exploration",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.6,
+    "price": "110",
+    "oldPrice": "160",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "6",
+    "title": "energy management in oil industry",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.4,
+    "price": "105",
+    "oldPrice": "155",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "7",
+    "title": "sustainable oil production",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.9,
+    "price": "130",
+    "oldPrice": "180",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "8",
+    "title": "oil refining safety protocols",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.2,
+    "price": "85",
+    "oldPrice": "120",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
+  },
+  {
+    "id": "9",
+    "title": "global oil market trends",
+    "duration": "2 hours",
+    "durationDesc": "weekly for 4 weeks",
+    "image": "/images/live-course.jfif",
+    "rating": 4.7,
+    "price": "140",
+    "oldPrice": "190",
+    "description": "starts: Dec 30, 2024 at 05:00 PM"
   }
 ]

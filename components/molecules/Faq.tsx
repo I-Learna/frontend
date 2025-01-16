@@ -17,7 +17,7 @@ const questions: IFAQ[] = [
   {
     question: "How do I book a course?",
     answer:
-      "Select a course from the home page or course listings, review the course details, and click 'Book Now.' Complete your payment, and you'll receive confirmation and session details.",
+      "Select a course from the home page or course listings, review the course details, and click  Book Now.  Complete your payment, and you ll receive confirmation and session details.",
   },
   {
     question: "Can I access recorded sessions after booking?",
@@ -52,7 +52,7 @@ const questions: IFAQ[] = [
   {
     question: "How do I reset my password?",
     answer:
-      "Click 'Forgot Password' on the login page, and follow the steps to reset it via email.",
+      "Click  Forgot Password  on the login page, and follow the steps to reset it via email.",
   },
 ];
 

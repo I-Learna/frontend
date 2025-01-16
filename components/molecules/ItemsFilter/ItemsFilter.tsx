@@ -10,6 +10,7 @@ interface IProps {
 
 const ItemsFilter: FC<IProps> = (props) => {
   const { onFiltersChange } = props;
+
   return (
     <>
       <div className="xl:hidden">

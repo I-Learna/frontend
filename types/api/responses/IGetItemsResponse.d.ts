@@ -1,9 +1,9 @@
-export interface IGetCoursesResponse {
+export interface IGetItemsResponse {
   totalItems: number;
-  courses: ICourse[];
+  items: IItem[];
 }
 
-export interface ICourse {
+export interface IItem {
   id: string;
   title: string;
   duration: string;

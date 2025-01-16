@@ -14,9 +14,7 @@ const ContactForm = () => {
   const formMethods = useForm<FormValues>();
   const { handleSubmit } = formMethods;
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log("Form Data:", data);
-  };
+  const onSubmit: SubmitHandler<FormValues> = (data) => {};
 
   return (
     <div className="bg-accent-lighter p-10 max-w-xl m-auto rounded-lg space-y-3">

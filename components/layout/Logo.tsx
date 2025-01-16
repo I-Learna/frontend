@@ -50,7 +50,7 @@ const Logo: FC<IProps> = (props) => {
   const { src, width, height, alt } = getLogoDetails();
 
   return (
-    <Link href="/">
+    <Link href="/" className="shrink-0">
       <Image
         src={src}
         alt={alt}

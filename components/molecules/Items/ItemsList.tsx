@@ -1,0 +1,36 @@
+import React from "react";
+import ItemCard from "./ItemCard";
+import { IItem } from "@/types/api/responses/IGetItemsResponse";
+
+interface IProps {
+  items: IItem[];
+  horizontal: boolean;
+}
+
+const ItemsList = ({ items, horizontal }: IProps) => {
+  return (
+    <div
+      className={`grid grid-cols-1  gap-4 ${
+        horizontal ? "grid-cols-1" : "sm:grid-cols-2 lg:grid-cols-3"
+      }`}
+    >
+      {items.map((item) => (
+        <ItemCard
+          key={item.id}
+          baseHref=""
+          title={item.title}
+          duration={item.duration}
+          durationDesc={item.durationDesc}
+          image={item.image}
+          rating={item.rating}
+          price={item.price}
+          oldPrice={item.oldPrice}
+          description={item.description}
+          horizontal={horizontal}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default ItemsList;

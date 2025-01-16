@@ -22,6 +22,22 @@ const carouselSettings: Settings = {
   autoplay: true,
   speed: 500,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024, // Screens smaller than 1024px
+      settings: {
+        slidesToShow: 2, // Show 2 slides
+        arrows: true, // Enable arrows
+      },
+    },
+    {
+      breakpoint: 768, // Screens smaller than 768px
+      settings: {
+        slidesToShow: 1, // Show 1 slide
+        arrows: true, // Enable arrows
+      },
+    },
+  ],
 };
 
 const Page = () => {
@@ -36,9 +52,9 @@ const Page = () => {
         <p className="font-light text-sm lg:ml-[4rem] relative lg:after:content-[''] lg:after:absolute lg:after:top-[6px] lg:after:left-[-4.5rem] lg:after:h-[2px] lg:after:w-[4rem] lg:after:bg-accent">
           i.learna is your gateway to world-class education. We bring together
           passionate instructors, ambitious learners, and cutting-edge tools to
-          create a learning experience that’s impactful, flexible, and tailored
-          to your goals. Whether you’re advancing your career, mastering a new
-          skill, or exploring a passion, we’re here to make it possible.
+          create a learning experience that s impactful, flexible, and tailored
+          to your goals. Whether you re advancing your career, mastering a new
+          skill, or exploring a passion, we re here to make it possible.
         </p>
 
         <Link
@@ -63,7 +79,7 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="shrink-0">
+        <div className="shrink-0 hidden lg:block">
           <Image
             src="/images/plan.webp"
             alt="aaa"

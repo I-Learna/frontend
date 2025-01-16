@@ -4,7 +4,7 @@ import React from "react";
 const ContactText = () => {
   return (
     <div className="space-y-3 h-full flex flex-col justify-evenly max-w-2xl m-auto">
-      <PageTitle>We're here to help you cucceed</PageTitle>
+      <PageTitle>We re here to help you cucceed</PageTitle>
 
       <p className="max-w-lg">
         Email, call or complete the form to learn how ilearna can solve your

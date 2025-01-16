@@ -1,12 +1,12 @@
-export interface IGetCoursesRequest {
+export interface IGetItemsRequest {
   search: string;
   sortBy: string;
   paginateFrom: number;
   paginateTo: number;
-  filters: IGetCoursesFilter[];
+  filters: IGetItemsFilter[];
 }
 
-export interface IGetCoursesFilter {
+export interface IGetItemsFilter {
   category: string;
   filters: string[];
 }

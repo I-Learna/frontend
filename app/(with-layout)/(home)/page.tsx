@@ -20,6 +20,22 @@ const carouselSettings: Settings = {
   autoplay: true,
   speed: 500,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024, // Screens smaller than 1024px
+      settings: {
+        slidesToShow: 2, // Show 2 slides
+        arrows: true, // Enable arrows
+      },
+    },
+    {
+      breakpoint: 768, // Screens smaller than 768px
+      settings: {
+        slidesToShow: 1, // Show 1 slide
+        arrows: true, // Enable arrows
+      },
+    },
+  ],
 };
 
 export default function Home() {

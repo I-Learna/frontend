@@ -1,11 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function useIsFirstRender(): boolean {
-  const isFirst = useRef(true);
-
-  if (isFirst.current) {
-    isFirst.current = false;
-    return true;
-  }
-  return false;
+  const isMountRef = useRef(true);
+  useEffect(() => {
+    isMountRef.current = false;
+  }, []);
+  return isMountRef.current;
 }
