@@ -5,14 +5,8 @@ import {
   getLiveCourses,
   getRecordedCourses,
 } from "@/services/itemsServices";
-import {
-  IGetItemsFilter,
-  IGetItemsRequest,
-} from "@/types/api/requests/IGetItemsRequest";
-import {
-  IGetItemsResponse,
-  IItem,
-} from "@/types/api/responses/IGetItemsResponse";
+import { IGetItemsFilter, IGetItemsRequest } from "@/types/api/requests/Items";
+import { IGetItemsResponse, IItem } from "@/types/api/responses/Items";
 import { useEffect, useState } from "react";
 
 interface IUseItemsProps {

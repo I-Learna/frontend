@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import ItemCard from "./ItemCard";
-import { IItem } from "@/types/api/responses/IGetItemsResponse";
+import { IItem } from "@/types/api/responses/Items";
 
 interface IProps {
   items: IItem[];
@@ -17,7 +18,7 @@ const ItemsList = ({ items, horizontal }: IProps) => {
       {items.map((item) => (
         <ItemCard
           key={item.id}
-          baseHref=""
+          id={item.id}
           title={item.title}
           duration={item.duration}
           durationDesc={item.durationDesc}
@@ -26,6 +27,8 @@ const ItemsList = ({ items, horizontal }: IProps) => {
           price={item.price}
           oldPrice={item.oldPrice}
           description={item.description}
+          tags={item.tags}
+          author={item.author}
           horizontal={horizontal}
         />
       ))}

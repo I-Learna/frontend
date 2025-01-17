@@ -2,7 +2,10 @@
 import ItemsFilter from "@/components/molecules/ItemsFilter/ItemsFilter";
 import Sort from "@/components/molecules/Sort";
 import Pagination from "@/components/ui/Pagination";
-import { IGetItemsResponse } from "@/types/api/responses/IGetItemsResponse";
+import {
+  IGetItemsResponse,
+  IItemsFiltersResponse,
+} from "@/types/api/responses/Items";
 import { FC } from "react";
 import GridOptions from "./GridOptions";
 import ItemsList from "./ItemsList";
@@ -10,12 +13,13 @@ import { useItems } from "./useItems";
 
 interface IProps {
   data: IGetItemsResponse;
+  filters: IItemsFiltersResponse;
   title: string;
   productType: "recorded" | "live" | "books";
 }
 
 const Items: FC<IProps> = (props) => {
-  const { data, title, productType } = props;
+  const { data, title, productType, filters } = props;
 
   const itemsState = useItems({ data, productType });
   const { items, totalItems, currentPage } = itemsState;
@@ -40,7 +44,7 @@ const Items: FC<IProps> = (props) => {
 
       {/* filters */}
       <div className="row-start-1 col-start-1 col-span-3 sm:col-start-1 sm:col-span-2 xl:row-start-2 xl:col-span-3">
-        <ItemsFilter onFiltersChange={handleFiltersChange} />
+        <ItemsFilter filters={filters} onFiltersChange={handleFiltersChange} />
       </div>
 
       {/* items list */}

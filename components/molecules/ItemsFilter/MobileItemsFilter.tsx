@@ -4,12 +4,14 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import FilterCategories from "./FilterCategoryList";
 import { IOnFiltersChange } from "./types";
 import MobileMenu from "@/components/ui/MobileMenu";
+import { IItemsFiltersResponse } from "@/types/api/responses/Items";
 
 interface IProps {
+  filters: IItemsFiltersResponse;
   onFiltersChange: IOnFiltersChange;
 }
 
-const MobileItemsFilter: FC<IProps> = ({ onFiltersChange }) => {
+const MobileItemsFilter: FC<IProps> = ({ onFiltersChange, filters }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => setIsOpen(true);
@@ -23,7 +25,7 @@ const MobileItemsFilter: FC<IProps> = ({ onFiltersChange }) => {
       <ShowFilters onOpen={openMenu} />
 
       <MobileMenu isOpen={isOpen} onClose={closeMenu}>
-        <FilterCategories onFiltersChange={onFiltersChange} />
+        <FilterCategories filters={filters} onFiltersChange={onFiltersChange} />
       </MobileMenu>
     </>
   );

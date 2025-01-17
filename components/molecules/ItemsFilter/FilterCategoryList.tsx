@@ -1,15 +1,20 @@
 "use client";
-import categories from "@/public/data/filters.json";
+
 import { FC } from "react";
 import FilterCategory from "./FilterCategory";
 import { IOnFiltersChange } from "./types";
 import { useFilterState } from "./useFilterState";
+import { IItemsFiltersResponse } from "@/types/api/responses/Items";
 
 interface IFilterCategoriesProps {
+  filters: IItemsFiltersResponse;
   onFiltersChange: IOnFiltersChange;
 }
 
-const FilterCategories: FC<IFilterCategoriesProps> = ({ onFiltersChange }) => {
+const FilterCategories: FC<IFilterCategoriesProps> = ({
+  onFiltersChange,
+  filters,
+}) => {
   const filterState = useFilterState(onFiltersChange);
   const { selectedFilters, handleCheckboxChange, clearFilters } = filterState;
 
@@ -22,7 +27,7 @@ const FilterCategories: FC<IFilterCategoriesProps> = ({ onFiltersChange }) => {
         Clear Filters
       </button>
 
-      {categories.map((category) => (
+      {filters.map((category) => (
         <FilterCategory
           key={category.categoryCode}
           category={category}

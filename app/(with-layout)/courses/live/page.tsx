@@ -1,6 +1,9 @@
 import Items from "@/components/molecules/Items/Items";
-import { getLiveCourses } from "@/services/itemsServices";
-import { IGetItemsRequest } from "@/types/api/requests/IGetItemsRequest";
+import {
+  getLiveCourses,
+  getLiveCoursesFilters,
+} from "@/services/itemsServices";
+import { IGetItemsRequest } from "@/types/api/requests/Items";
 import React, { Suspense } from "react";
 
 const page = async () => {
@@ -13,10 +16,16 @@ const page = async () => {
   };
 
   const courses = await getLiveCourses(request);
+  const filters = await getLiveCoursesFilters();
 
   return (
     <Suspense>
-      <Items data={courses} title="ilearna live courses" productType="live" />
+      <Items
+        data={courses}
+        filters={filters}
+        title="ilearna live courses"
+        productType="live"
+      />
     </Suspense>
   );
 };

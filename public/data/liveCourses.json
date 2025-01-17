@@ -8,7 +8,12 @@
     "rating": 4.5,
     "price": "100",
     "oldPrice": "150",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "2",
@@ -19,7 +24,12 @@
     "rating": 4.7,
     "price": "120",
     "oldPrice": "180",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "3",
@@ -30,7 +40,12 @@
     "rating": 4.3,
     "price": "90",
     "oldPrice": "130",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "4",
@@ -41,7 +56,12 @@
     "rating": 4.8,
     "price": "150",
     "oldPrice": "200",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "5",
@@ -52,7 +72,12 @@
     "rating": 4.6,
     "price": "110",
     "oldPrice": "160",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "6",
@@ -63,7 +88,12 @@
     "rating": 4.4,
     "price": "105",
     "oldPrice": "155",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "7",
@@ -74,7 +104,12 @@
     "rating": 4.9,
     "price": "130",
     "oldPrice": "180",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "8",
@@ -85,7 +120,12 @@
     "rating": 4.2,
     "price": "85",
     "oldPrice": "120",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "9",
@@ -96,6 +136,11 @@
     "rating": 4.7,
     "price": "140",
     "oldPrice": "190",
-    "description": "starts: Dec 30, 2024 at 05:00 PM"
+    "description": "starts: Dec 30, 2024 at 05:00 PM",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   }
 ]

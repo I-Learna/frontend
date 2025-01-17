@@ -1,7 +1,10 @@
 "use server";
 import Items from "@/components/molecules/Items/Items";
-import { getRecordedCourses } from "@/services/itemsServices";
-import { IGetItemsRequest } from "@/types/api/requests/IGetItemsRequest";
+import {
+  getRecordedCourses,
+  getRecordedCoursesFilters,
+} from "@/services/itemsServices";
+import { IGetItemsRequest } from "@/types/api/requests/Items";
 import { Suspense } from "react";
 
 const Page = async () => {
@@ -14,11 +17,13 @@ const Page = async () => {
   };
 
   const courses = await getRecordedCourses(request);
+  const filters = await getRecordedCoursesFilters();
 
   return (
     <Suspense>
       <Items
         data={courses}
+        filters={filters}
         title="ilearna recorded courses"
         productType="recorded"
       />

@@ -1,6 +1,6 @@
 import useIsFirstRender from "@/hooks/useIsFirstRender";
 import useUpdateEffect from "@/hooks/useUpdateEffect";
-import { IGetItemsFilter } from "@/types/api/requests/IGetItemsRequest";
+import { IGetItemsFilter } from "@/types/api/requests/Items";
 import { useState } from "react";
 import { IOnFiltersChange } from "./types";
 

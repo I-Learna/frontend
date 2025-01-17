@@ -1,6 +1,6 @@
 import Items from "@/components/molecules/Items/Items";
-import { getBooks } from "@/services/itemsServices";
-import { IGetItemsRequest } from "@/types/api/requests/IGetItemsRequest";
+import { getBooks, getBooksFilters } from "@/services/itemsServices";
+import { IGetItemsRequest } from "@/types/api/requests/Items";
 import React, { Suspense } from "react";
 
 const Page = async () => {
@@ -13,10 +13,16 @@ const Page = async () => {
   };
 
   const books = await getBooks(request);
+  const filters = await getBooksFilters();
 
   return (
     <Suspense>
-      <Items data={books} title="ilearna live courses" productType="books" />
+      <Items
+        data={books}
+        filters={filters}
+        title="ilearna live courses"
+        productType="books"
+      />
     </Suspense>
   );
 };

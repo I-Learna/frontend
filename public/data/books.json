@@ -8,7 +8,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "2",
@@ -19,7 +24,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "3",
@@ -30,7 +40,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "4",
@@ -41,7 +56,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "5",
@@ -52,7 +72,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "6",
@@ -63,7 +88,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "7",
@@ -74,7 +104,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "8",
@@ -85,7 +120,12 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   },
   {
     "id": "9",
@@ -96,6 +136,11 @@
     "rating": 5,
     "price": "45.99",
     "oldPrice": "60.99",
-    "description": ""
+    "description": "",
+    "tags": ["Expert"],
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
   }
 ]
