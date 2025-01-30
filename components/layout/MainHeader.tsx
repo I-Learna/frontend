@@ -7,6 +7,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
 import { GrMenu } from "react-icons/gr";
 import MobileMenu from "../ui/MobileMenu";
+import MainHeaderActions from "./MainHeaderActions";
 
 const MainHeader: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,13 +19,17 @@ const MainHeader: React.FC = () => {
   }, [pathname]);
 
   return (
-    <header className="flex items-center space-x-10 px-6 py-4 bg-white shadow-sm z-10">
+    <header className="flex items-center space-x-10 px-6 py-4 bg-white shadow-sm z-10 relative">
       <MobileMenuToggler onClick={() => setIsMenuOpen(!isMenuOpen)} />
 
       <Logo className="w-28" />
 
-      <div className="hidden lg:block ml-5">
-        <NavBar />
+      <div className="hidden lg:block ml-5 w-full">
+        <div className="flex items-center">
+          <NavBar />
+
+          <MainHeaderActions />
+        </div>
       </div>
 
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
