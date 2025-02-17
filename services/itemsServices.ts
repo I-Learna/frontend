@@ -2,6 +2,7 @@ import recordedCourses from "@/public/data/recordedCourses.json";
 import liveCourses from "@/public/data/liveCourses.json";
 import filters from "@/public/data/filters.json";
 import books from "@/public/data/books.json";
+import recordedCourse from "@/public/data/RecordedCourseDetails.json";
 import { IGetItemsRequest } from "@/types/api/requests/Items";
 import {
   IGetItemsResponse,
@@ -56,7 +57,10 @@ export async function getBooksFilters(): Promise<IItemsFiltersResponse> {
   return filters;
 }
 
-export async function getRecordedCourseDetails(id: string) {}
+export async function getRecordedCourseDetails(id: string) {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  return recordedCourse;
+}
 
 export async function getLiveCourseDetails(id: string) {}
 

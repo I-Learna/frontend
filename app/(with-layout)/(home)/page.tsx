@@ -9,6 +9,7 @@ import reviews from "@/public/data/reviews.json";
 import { v4 } from "uuid";
 import SectionTitle from "@/components/ui/SectionTitle";
 import ReviewMessage from "@/components/molecules/ReviewMessage";
+import VideoPlayer from "@/components/ui/VideoPlayer";
 
 export const metadata: Metadata = {
   title: "I Learna",
@@ -48,6 +49,8 @@ export default function Home() {
           </PageTitle>
         </div>
       </section>
+
+      <VideoPlayer />
 
       <section>
         <div className="max-w-sm ml-20">

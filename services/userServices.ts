@@ -7,6 +7,10 @@ export async function getMyCourses(): Promise<IMyCourse[]> {
   return MyCourses;
 }
 
+export async function getCourseModules() {}
+
+export async function getCourseLesson() {}
+
 export async function getRecommendedCourses() {}
 
 export async function getCartInfo() {}

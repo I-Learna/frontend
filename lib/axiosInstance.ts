@@ -1,5 +1,5 @@
+import { getAuthToken } from "@/utils/getAuthToken";
 import axios from "axios";
-import { cookies } from "next/headers";
 
 const axiosInstance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
@@ -15,18 +15,7 @@ axiosInstance.interceptors.request.use(
     config.headers = config.headers || {};
 
     // Add Authorization header
-    let token;
-    if (typeof window === "undefined") {
-      // SSR: Use Next.js cookies()
-      token = cookies().get("token")?.value;
-    } else {
-      // CSR: Cookies are automatically attached by the browser
-      // If you need to access a token stored in a non-HttpOnly cookie manually:
-      token = document.cookie
-        .split("; ")
-        .find((row) => row.startsWith("token="))
-        ?.split("=")[1];
-    }
+    let token = getAuthToken();
 
     if (token) {
       config.headers["Authorization"] = `Bearer ${token}`;

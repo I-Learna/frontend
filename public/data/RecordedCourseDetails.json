@@ -1,0 +1,262 @@
+{
+  "id": 1,
+  "basicInfo": {
+    "courseTitle": "The complete full-stack web development bootcamp",
+    "desc": "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps.",
+    "price": {
+      "activePrice": 49.99,
+      "oldPrice": 60.99
+    },
+    "modulesCount": 5,
+    "duration": "10 hours",
+    "likes": "98%",
+    "rating": {
+      "rate": 4.7,
+      "reviewsCount": 280
+    },
+    "courseLevel": {
+      "level": "Beginner",
+      "prerequesits": "No previouse experience"
+    },
+    "enrolledCount": 121015
+  },
+  "overview": {
+    "video": "",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "learningPoints": [
+      "Lorem Ipsum is simply dummy text of the printing",
+      "Lorem Ipsum is simply dummy text of the printing",
+      "Lorem Ipsum is simply dummy text of the printing",
+      "Lorem Ipsum is simply dummy text of the printing",
+      "Lorem Ipsum is simply dummy text of the printing",
+      "Lorem Ipsum is simply dummy text of the printing"
+    ],
+    "prerequesits": [
+      "Lorem Ipsum is simply dummy text of the printing",
+      "Lorem Ipsum is simply dummy text of the printing"
+    ],
+    "extraDetails": [
+      {
+        "icon": "",
+        "title": "Recently updated!",
+        "desc": "October 2024"
+      },
+      {
+        "icon": "",
+        "title": "Assessments",
+        "desc": "12 Assessments"
+      },
+      {
+        "icon": "",
+        "title": "Language",
+        "desc": "English & Arabic"
+      }
+    ]
+  },
+  "modules": {
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "data": [
+      {
+        "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "duration": "3 hours to complete",
+        "lessonsDesc": "5 videos, Total 37 minutes",
+        "lessons": [
+          {
+            "id": 1,
+            "title": "Welcome to Google Prompting Essentials",
+            "duration": "05:22",
+            "canPreview": true
+          },
+          {
+            "id": 2,
+            "title": "Discover how AI can help at work",
+            "duration": "05:22",
+            "canPreview": false
+          },
+          {
+            "id": 3,
+            "title": "AI IRL: Unlock your relationship with AI through prompting",
+            "duration": "05:22",
+            "canPreview": false
+          },
+          {
+            "id": 4,
+            "title": "use the 5-step prompt framework",
+            "duration": "05:22",
+            "canPreview": false
+          },
+          {
+            "id": 5,
+            "title": "put the prompt framework into action",
+            "duration": "05:22",
+            "canPreview": false
+          }
+        ],
+        "assessmentsDesc": "4 assignments, total 60 minutes",
+        "assessments": [
+          {
+            "id": 1,
+            "title": "put the prompt framework into action",
+            "duration": "05:22"
+          },
+          {
+            "id": 2,
+            "title": "put the prompt framework into action",
+            "duration": "05:22"
+          },
+          {
+            "id": 3,
+            "title": "put the prompt framework into action",
+            "duration": "05:22"
+          }
+        ],
+        "readingsDesc": "5 readings, total 37 minutes",
+        "readings": [
+          {
+            "id": 1,
+            "title": "put the prompt framework into action",
+            "duration": "05:22"
+          },
+          {
+            "id": 2,
+            "title": "put the prompt framework into action",
+            "duration": "05:22"
+          },
+          {
+            "id": 3,
+            "title": "put the prompt framework into action",
+            "duration": "05:22"
+          }
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "overview": {
+      "rating": 4.7,
+      "totalReviews": 578,
+      "five": 200,
+      "four": 74,
+      "three": 14,
+      "two": 0,
+      "one": 0
+    },
+    "reviewers": [
+      {
+        "id": 1,
+        "name": "Alex K.",
+        "rating": 4.5,
+        "review": "Working at Sam.AI has been an incredible journey so far. The technology we're building is truly cutting-edge, and being a part of a team that's revolutionizing how people achieve their goals is immensely fulfilling.",
+        "date": "Jan 20, 2024"
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 4.5,
+        "review": "Working at Sam.AI has been an incredible journey so far. The technology we're building is truly cutting-edge, and being a part of a team that's revolutionizing how people achieve their goals is immensely fulfilling.",
+        "date": "Jan 20, 2024"
+      },
+      {
+        "id": 3,
+        "name": "Alex K.",
+        "rating": 4.5,
+        "review": "Working at Sam.AI has been an incredible journey so far. The technology we're building is truly cutting-edge, and being a part of a team that's revolutionizing how people achieve their goals is immensely fulfilling.",
+        "date": "Jan 20, 2024"
+      },
+      {
+        "id": 4,
+        "name": "Alex K.",
+        "rating": 4.5,
+        "review": "Working at Sam.AI has been an incredible journey so far. The technology we're building is truly cutting-edge, and being a part of a team that's revolutionizing how people achieve their goals is immensely fulfilling.",
+        "date": "Jan 20, 2024"
+      },
+      {
+        "id": 5,
+        "name": "Alex K.",
+        "rating": 4.5,
+        "review": "Working at Sam.AI has been an incredible journey so far. The technology we're building is truly cutting-edge, and being a part of a team that's revolutionizing how people achieve their goals is immensely fulfilling.",
+        "date": "Jan 20, 2024"
+      },
+      {
+        "id": 6,
+        "name": "Alex K.",
+        "rating": 4.5,
+        "review": "Working at Sam.AI has been an incredible journey so far. The technology we're building is truly cutting-edge, and being a part of a team that's revolutionizing how people achieve their goals is immensely fulfilling.",
+        "date": "Jan 20, 2024"
+      }
+    ]
+  },
+  "author": {
+    "id": 1,
+    "name": "Mohamed Khaled",
+    "pic": "/images/avatar.webp",
+    "title": "Senior Software Engineer & Course Creator",
+    "bio": "10+ years of experience in web development and teaching. Passionate about helping others learn React and modern JavaScript.",
+    "courses": [
+      {
+        "id": "1",
+        "title": "fundamentals of oil refining",
+        "duration": "10 hours",
+        "durationDesc": "5 sessions",
+        "image": "/images/recorded-course.jfif",
+        "rating": 4.5,
+        "price": "100",
+        "oldPrice": "150",
+        "description": "last update 12/06/2024",
+        "tags": ["Expert"],
+        "author": {
+          "name": "Mohamed Khaled",
+          "image": "/images/avatar.jfif"
+        }
+      },
+      {
+        "id": "2",
+        "title": "advanced oil refining techniques",
+        "duration": "12 hours",
+        "durationDesc": "6 sessions",
+        "image": "/images/recorded-course.jfif",
+        "rating": 4.7,
+        "price": "120",
+        "oldPrice": "180",
+        "description": "last update 01/07/2024",
+        "tags": ["Expert"],
+        "author": {
+          "name": "Mohamed Khaled",
+          "image": "/images/avatar.jfif"
+        }
+      },
+      {
+        "id": "3",
+        "title": "introduction to petrochemicals",
+        "duration": "8 hours",
+        "durationDesc": "4 sessions",
+        "image": "/images/recorded-course.jfif",
+        "rating": 4.3,
+        "price": "90",
+        "oldPrice": "130",
+        "description": "last update 15/05/2024",
+        "tags": ["Expert"],
+        "author": {
+          "name": "Mohamed Khaled",
+          "image": "/images/avatar.jfif"
+        }
+      },
+      {
+        "id": "4",
+        "title": "petroleum engineering basics",
+        "duration": "15 hours",
+        "durationDesc": "7 sessions",
+        "image": "/images/recorded-course.jfif",
+        "rating": 4.8,
+        "price": "150",
+        "oldPrice": "200",
+        "description": "last update 20/06/2024",
+        "tags": ["Expert"],
+        "author": {
+          "name": "Mohamed Khaled",
+          "image": "/images/avatar.jfif"
+        }
+      }
+    ]
+  }
+}

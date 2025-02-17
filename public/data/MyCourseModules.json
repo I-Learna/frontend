@@ -1,0 +1,182 @@
+[
+  [
+    {
+      "id": 1,
+      "title": "Welcome!",
+      "duration": "03:36",
+      "isVisited": true,
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "title": "What is product design?",
+      "duration": "13:09",
+      "isVisited": true,
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "product designer role",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "A little bit of background",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Welcome!",
+      "duration": "03:36",
+      "isVisited": true,
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "title": "What is product design?",
+      "duration": "13:09",
+      "isVisited": true,
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "product designer role",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "A little bit of background",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Welcome!",
+      "duration": "03:36",
+      "isVisited": true,
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "title": "What is product design?",
+      "duration": "13:09",
+      "isVisited": true,
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "product designer role",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "A little bit of background",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Welcome!",
+      "duration": "03:36",
+      "isVisited": true,
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "title": "What is product design?",
+      "duration": "13:09",
+      "isVisited": true,
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "product designer role",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "A little bit of background",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Welcome!",
+      "duration": "03:36",
+      "isVisited": true,
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "title": "What is product design?",
+      "duration": "13:09",
+      "isVisited": true,
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "product designer role",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "A little bit of background",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Welcome!",
+      "duration": "03:36",
+      "isVisited": true,
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "title": "What is product design?",
+      "duration": "13:09",
+      "isVisited": true,
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "product designer role",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "A little bit of background",
+      "duration": "13:09",
+      "isVisited": false,
+      "isCompleted": false
+    }
+  ]
+]

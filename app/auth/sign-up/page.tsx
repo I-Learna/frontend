@@ -4,14 +4,16 @@ import InputEmail from "@/components/ui/InputEmail";
 import InputFile from "@/components/ui/InputFile";
 import InputPassword from "@/components/ui/InputPassword";
 import InputText from "@/components/ui/InputText";
+import { register } from "@/services/authServices";
 import Link from "next/link";
 import { useState } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 
 type FormValues = {
-  username: string;
+  name: string;
   email: string;
   password: string;
+  confirmPassword: string;
   cv?: FileList;
 };
 
@@ -23,7 +25,14 @@ const SignUp = () => {
   const formMethods = useForm<FormValues>();
   const { handleSubmit } = formMethods;
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {};
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    await register({
+      name: data.name,
+      email: data.email,
+      password: data.password,
+      confirmPassword: data.confirmPassword,
+    });
+  };
 
   return (
     <div className="mt-6 font-semibold">
@@ -55,7 +64,7 @@ const SignUp = () => {
       <FormProvider {...formMethods}>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <InputText
-            name="username"
+            name="name"
             label="Username"
             placeholder="Enter your name"
             rules={{ required: "Username is required" }}
@@ -90,6 +99,14 @@ const SignUp = () => {
                 message: "Must include an uppercase, a number, and a symbol",
               },
             }}
+          />
+
+          <InputPassword
+            name="confirmPassword"
+            label="Confirm Password"
+            placeholder="Enter your password"
+            rules={{ required: "Please confirm you new password" }}
+            confirmField="password"
           />
 
           {activeTab === "freelancer" && (

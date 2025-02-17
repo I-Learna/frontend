@@ -8,6 +8,8 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { GrMenu } from "react-icons/gr";
 import MobileMenu from "../ui/MobileMenu";
 import MainHeaderActions from "./MainHeaderActions";
+import { ProfileNav } from "@/app/(with-layout)/profile/layout";
+import { RxAvatar } from "react-icons/rx";
 
 const MainHeader: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +22,10 @@ const MainHeader: React.FC = () => {
 
   return (
     <header className="flex items-center space-x-10 px-6 py-4 bg-white shadow-sm z-10 relative">
-      <MobileMenuToggler onClick={() => setIsMenuOpen(!isMenuOpen)} />
+      <div className="flex items-center gap-3">
+        <MobileMenuToggler onClick={() => setIsMenuOpen(!isMenuOpen)} />
+        <ProfileMobileNav />
+      </div>
 
       <Logo className="w-28" />
 
@@ -45,6 +50,28 @@ const MobileMenuToggler: FC<{ onClick: () => void }> = ({ onClick }) => {
     <button className="lg:hidden" onClick={onClick}>
       <GrMenu className="h-6 w-6" />
     </button>
+  );
+};
+
+const ProfileMobileNav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // To close the mobile menu when navigating
+  const pathname = usePathname();
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  return (
+    <>
+      <button className="lg:hidden" onClick={() => setIsMenuOpen(true)}>
+        <RxAvatar className="h-6 w-6" />
+      </button>
+
+      <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+        <ProfileNav />
+      </MobileMenu>
+    </>
   );
 };
 
