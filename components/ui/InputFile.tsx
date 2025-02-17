@@ -7,8 +7,10 @@ import InputError from "./InputError";
 interface IProps {
   name: string;
   label: string;
+  accept: string;
   placeholder?: string;
   rules?: object;
+  children?: React.ReactNode;
 }
 
 const InputFile: FC<IProps> = (props) => {
@@ -43,13 +45,11 @@ const InputFile: FC<IProps> = (props) => {
         />
         <div className="flex items-center justify-center text-accent cursor-pointer">
           <FiUpload className="mr-2" />
-          <span>{fileName || "Upload File"}</span>
+          <span>{fileName || props.placeholder || "Upload File"}</span>
         </div>
       </div>
 
-      <p className="text-xs mt-1 text-customGray">
-        Supported formats include PDF, DOC, DOCX, or RTF (max 20MB).
-      </p>
+      {props.children}
 
       <InputError error={error?.message?.toString()} />
     </div>

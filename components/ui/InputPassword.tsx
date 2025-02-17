@@ -70,7 +70,7 @@ const TogglePass: FC<{ onClick: () => void; isPlainText: boolean }> = (
       onClick={props.onClick}
       className="absolute right-2 top-1/2 transform -translate-y-1/2 text-customGray"
     >
-      {props.isPlainText ? <LuEyeClosed /> : <FiEye />}
+      {props.isPlainText ? <FiEye /> : <LuEyeClosed />}
     </button>
   );
 };

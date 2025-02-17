@@ -6,9 +6,11 @@ import { ReactNode } from "react";
 
 export default function WithLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
       <MainHeader />
-      {children}
+
+      <div className="app-wrapper">{children}</div>
+
       <MainFooter />
     </div>
   );

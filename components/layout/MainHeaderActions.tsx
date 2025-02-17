@@ -63,7 +63,7 @@ const ProfileActions: FC = () => {
             <p className="text-accent text-sm font-semibold">Hello,</p>
             <p className="text-sm font-semibold text-primary">Ahmed Mohamed</p>
 
-            <button className="w-full bg-accent text-white mt-3 py-2 rounded-md">
+            <button className="w-full mt-3 btn btn-accent">
               <Link href="/profile">View and Edit Your Profile</Link>
             </button>
           </div>

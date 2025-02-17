@@ -43,10 +43,7 @@ const ContactForm = () => {
 
           <InputTextArea name="message" placeholder="How can we help?" />
 
-          <button
-            type="submit"
-            className="w-full py-2 text-white bg-accent rounded-md hover:bg-accent-dark transition duration-300"
-          >
+          <button type="submit" className="btn btn-accent block w-full">
             Submit
           </button>
         </form>

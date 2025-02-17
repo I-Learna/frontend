@@ -18,6 +18,26 @@
     left: -15px;
     @apply bg-primary;
   }
+
+  .app-wrapper {
+    @apply 2xl:w-[1440px] 2xl:m-auto;
+  }
+
+  .btn {
+    @apply transition-all duration-300 rounded-md py-[.6em] px-[1.2em];
+  }
+
+  .btn-accent {
+    @apply text-white bg-accent hover:bg-accent-dark;
+  }
+
+  .btn-accent-trans {
+    @apply text-accent border border-accent hover:bg-accent hover:text-white;
+  }
+
+  .btn-white-trans {
+    @apply text-white border border-white hover:bg-white hover:text-accent;
+  }
 }
 
 .slick-dots.slick-thumb {

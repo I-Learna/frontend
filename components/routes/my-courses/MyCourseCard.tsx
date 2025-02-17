@@ -4,7 +4,7 @@ import React, { FC } from "react";
 
 const MyCourseCard: FC<{ course: IMyCourse }> = ({ course }) => {
   return (
-    <div className="drop-shadow-md bg-white rounded-lg max-w-md">
+    <div className="drop-shadow-md bg-white rounded-lg">
       <div className="relative w-full h-56">
         <Image src={course.image} alt={course.title} fill />
 

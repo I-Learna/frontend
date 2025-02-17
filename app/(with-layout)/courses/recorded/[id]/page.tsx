@@ -28,7 +28,7 @@ const Page: FC<PageProps> = async ({ params }) => {
   const details = await getRecordedCourseDetails(itemId);
 
   return (
-    <main className="p-4 max-w-[1440px] m-auto">
+    <main className="p-4">
       <CourseHeader basicInfo={details.basicInfo} author={details.author} />
 
       <CourseTabs />

@@ -50,8 +50,6 @@ export default function Home() {
         </div>
       </section>
 
-      <VideoPlayer />
-
       <section>
         <div className="max-w-sm ml-20">
           <SectionTitle>What our users say about iLearna</SectionTitle>

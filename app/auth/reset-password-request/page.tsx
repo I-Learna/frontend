@@ -49,10 +49,7 @@ const ResetPasswordRequest = () => {
             }}
           />
 
-          <button
-            type="submit"
-            className="w-full py-3 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition duration-200"
-          >
+          <button type="submit" className="btn btn-accent block w-full">
             Send Reset Link
           </button>
         </form>

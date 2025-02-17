@@ -44,12 +44,7 @@ const ResetPassword = () => {
             confirmField="password"
           />
 
-          <button
-            type="submit"
-            className={
-              "w-full py-3 text-white rounded-lg transition duration-200 bg-blue-500 hover:bg-blue-600"
-            }
-          >
+          <button type="submit" className="btn btn-accent block w-full">
             Reset password
           </button>
         </form>

@@ -16,7 +16,7 @@ const CourseModules: FC<{ modules: ICourseModules }> = ({ modules }) => {
         <p className="mt-5">{modules.desc}</p>
       </section>
 
-      <section className="mt-12 border-2 border-gray-400 rounded-lg p-8">
+      <section className="mt-12 border-2 border-gray-400 rounded-lg p-8 max-w-5xl">
         {modules.data.map((module, i) => (
           <div key={v4()}>
             <h2 className="text-lg font-semibold">

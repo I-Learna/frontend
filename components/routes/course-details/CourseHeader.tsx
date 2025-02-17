@@ -34,14 +34,12 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
           </p>
 
           <div className="flex gap-3">
-            <button className="bg-accent text-white py-3 px-6 rounded-lg">
-              Buy This Course
-            </button>
-            <button className="border border-white text-white py-3 px-6 rounded-lg">
-              Add To Cart
-            </button>
-            <button className="border border-white text-white py-3 px-3 rounded-lg">
-              <FaRegHeart className="text-2xl" />
+            <button className="btn btn-accent">Buy this course</button>
+
+            <button className="btn btn-white-trans">Add To Cart</button>
+
+            <button className="btn btn-white-trans">
+              <FaRegHeart className="text-2xl m-0 p-0" />
             </button>
           </div>
         </div>
@@ -63,7 +61,7 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
         <p>{author.title}</p>
         <p>{author.bio}</p>
 
-        <button className="mt-4 border-2 border-white py-2 px-8 rounded-lg text-xl">
+        <button className="mt-4 btn btn-white-trans text-lg">
           View Profile
         </button>
       </div>

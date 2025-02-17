@@ -8,8 +8,8 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { GrMenu } from "react-icons/gr";
 import MobileMenu from "../ui/MobileMenu";
 import MainHeaderActions from "./MainHeaderActions";
-import { ProfileNav } from "@/app/(with-layout)/profile/layout";
 import { RxAvatar } from "react-icons/rx";
+import ProfileNav from "./ProfileNav";
 
 const MainHeader: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

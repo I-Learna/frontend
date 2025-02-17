@@ -66,10 +66,7 @@ const Page = () => {
             options={[]}
           />
 
-          <div className="flex justify-end gap-4"></div>
-          <button className="bg-accent hover:bg-accent-dark transition-all duration-300 text-white py-2 px-5 rounded-lg ml-auto block w-full lg:w-max">
-            Save Changes
-          </button>
+          <button className="btn btn-accent block ml-auto">Save Changes</button>
         </FormProvider>
       </div>
     </>
