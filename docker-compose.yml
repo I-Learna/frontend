@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    # expose the port 3000 of the container to the port 80 of the host
+      - "80:3000"
