@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -20,6 +23,7 @@ jobs:
         script: |
             cd /opt/frontend
             gh auth setup-git
+            git checkout add-docker-config
             git pull
             docker-compose down
             docker-compose up --build -d
