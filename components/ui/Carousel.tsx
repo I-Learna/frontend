@@ -11,7 +11,6 @@ const Carousel: FC<IProps> = (props) => {
   const settings: Settings = {
     dots: true,
     infinite: true,
-    centerMode: true,
     customPaging: function (i) {
       return <div className="dot"></div>;
     },
@@ -21,16 +20,7 @@ const Carousel: FC<IProps> = (props) => {
 
   return (
     <div className="container mx-auto p-4">
-      <Slider {...settings}>
-        {props.children}
-        {/* {items.map((item) => (
-          <div key={item.id} className="p-4">
-            <div className="h-64 flex items-center justify-center bg-blue-500 text-white text-xl">
-              {item.content}
-            </div>
-          </div>
-        ))} */}
-      </Slider>
+      <Slider {...settings}>{props.children}</Slider>
     </div>
   );
 };

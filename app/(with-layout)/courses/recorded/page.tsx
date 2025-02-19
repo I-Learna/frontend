@@ -1,4 +1,3 @@
-"use server";
 import Items from "@/components/molecules/Items/Items";
 import {
   getRecordedCourses,

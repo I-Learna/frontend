@@ -60,3 +60,31 @@
   @apply bg-accent-dark;
   width: 24px;
 }
+
+.slick-next {
+  right: 25px !important;
+}
+
+.slick-prev {
+  left: 25px !important;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: auto !important;
+  height: auto !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+}
+
+.slick-prev:before {
+  content: "\276E" !important;
+}
+
+.slick-next::before {
+  content: "\276F" !important;
+}
