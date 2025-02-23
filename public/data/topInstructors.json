@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Carter",
+    "title": "Frontend Instructor",
+    "avatar": "/images/avatar.webp"
+  },
+  {
+    "id": 2,
+    "name": "Alex Carter",
+    "title": "Frontend Instructor",
+    "avatar": "/images/avatar.webp"
+  },
+  {
+    "id": 3,
+    "name": "Alex Carter",
+    "title": "Frontend Instructor",
+    "avatar": "/images/avatar.webp"
+  },
+  {
+    "id": 4,
+    "name": "Alex Carter",
+    "title": "Frontend Instructor",
+    "avatar": "/images/avatar.webp"
+  },
+  {
+    "id": 5,
+    "name": "Alex Carter",
+    "title": "Frontend Instructor",
+    "avatar": "/images/avatar.webp"
+  },
+  {
+    "id": 6,
+    "name": "Alex Carter",
+    "title": "Frontend Instructor",
+    "avatar": "/images/avatar.webp"
+  }
+]

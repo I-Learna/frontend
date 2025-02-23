@@ -20,7 +20,7 @@
   }
 
   .app-wrapper {
-    @apply 2xl:w-[1440px] 2xl:m-auto;
+    @apply 2xl:w-[1440px] 2xl:m-auto mx-1;
   }
 
   .btn {
