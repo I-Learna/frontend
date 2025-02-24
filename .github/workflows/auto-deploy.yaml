@@ -18,8 +18,10 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_PASSWORD }}     
         script: |
+            set -e
             cd /opt/frontend
             gh auth setup-git
+            git checkout main
             git pull
             docker-compose down
             docker-compose up --build -d

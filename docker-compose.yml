@@ -6,5 +6,13 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-    # expose the port 3000 of the container to the port 80 of the host
       - "80:3000"
+    networks:
+      - frontend-backend-net
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://backend:7000
+
+networks:
+  external:
+    external:
+      name: frontend-backend-net
