@@ -25,3 +25,5 @@ jobs:
             git pull
             docker-compose down
             docker-compose up --build -d
+            # Clean up dangling images
+            docker rmi $(docker images -f "dangling=true" -q)
