@@ -58,7 +58,7 @@ const questions: IFAQ[] = [
 
 const Faq = () => {
   return (
-    <div className="w-full max-w-3xl">
+    <div className="w-full max-w-3xl m-auto">
       <h1 className="text-2xl font-bold mb-4 text-center">FAQs</h1>
 
       {/* Questions */}

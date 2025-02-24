@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "background": "/images/carouselBanner.png",
+    "title": "Unlock your potential with expert-led courses & learning paths",
+    "desc": "Explore a comprehensive learning platform tailored to your success. Gain hands-on skills, connect with top industry professionals, and achieve your career goals with courses designed to inspire, challenge, and empower you anytime, anywhere."
+  },
+  {
+    "id": 2,
+    "background": "/images/carouselBanner.png",
+    "title": "Unlock your potential with expert-led courses & learning paths",
+    "desc": "Explore a comprehensive learning platform tailored to your success. Gain hands-on skills, connect with top industry professionals, and achieve your career goals with courses designed to inspire, challenge, and empower you anytime, anywhere."
+  },
+  {
+    "id": 3,
+    "background": "/images/carouselBanner.png",
+    "title": "Unlock your potential with expert-led courses & learning paths",
+    "desc": "Explore a comprehensive learning platform tailored to your success. Gain hands-on skills, connect with top industry professionals, and achieve your career goals with courses designed to inspire, challenge, and empower you anytime, anywhere."
+  }
+]
