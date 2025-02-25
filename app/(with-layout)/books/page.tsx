@@ -1,3 +1,4 @@
+import PageBanner from "@/components/layout/PageBanner";
 import Items from "@/components/molecules/Items/Items";
 import { getBooks, getBooksFilters } from "@/services/itemsServices";
 import { IGetItemsRequest } from "@/types/api/requests/Items";
@@ -17,6 +18,12 @@ const Page = async () => {
 
   return (
     <Suspense>
+      <PageBanner
+        title="Expand Your Knowledge with Expert-Authored E-Books"
+        pathName="E-BOOKS"
+        imgSrc="/images/booksbanner.png"
+        bgClass="bg-[#F7FFD2]"
+      />
       <Items
         data={books}
         filters={filters}

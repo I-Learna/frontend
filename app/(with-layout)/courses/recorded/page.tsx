@@ -1,3 +1,4 @@
+import PageBanner from "@/components/layout/PageBanner";
 import Items from "@/components/molecules/Items/Items";
 import {
   getRecordedCourses,
@@ -20,6 +21,12 @@ const Page = async () => {
 
   return (
     <Suspense>
+      <PageBanner
+        title="Learn at Your Own Pace with Expert-Led Recorded Courses"
+        pathName="RECORDED COURSES"
+        imgSrc="/images/recordedbanner.png"
+        bgClass="bg-accent-light"
+      />
       <Items
         data={courses}
         filters={filters}
