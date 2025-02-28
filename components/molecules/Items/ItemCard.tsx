@@ -5,7 +5,7 @@ import { encrypt } from "@/utils/Cryptojs";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import React, { FC } from "react";
-import { BiBookAlt } from "react-icons/bi";
+import { BiBookAlt, BiLike } from "react-icons/bi";
 import { CgSandClock } from "react-icons/cg";
 
 interface ItemCardProps {
@@ -42,13 +42,18 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
 
   return (
     <div
-      className="border border-accent-light rounded-md cursor-pointer"
+      className="border border-accent-light rounded-lg cursor-pointer"
       onClick={navigate}
     >
       <div className="relative w-full h-56">
-        <Image className="object-cover" src={image} alt={title} fill />
+        <Image
+          className="object-cover rounded-t-lg"
+          src={image}
+          alt={title}
+          fill
+        />
 
-        {tags && (
+        {pathname !== "/blogs" && tags && (
           <div className="absolute top-3 left-3 flex flex-col space-y-3">
             {tags.map((tag) => (
               <p className="bg-accent text-white py-1 px-5 rounded-md">{tag}</p>
@@ -59,14 +64,35 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
 
       <div className="p-4 space-y-2">
         <div className="flex justify-between items-center text-gray-500 capitalize text-xs">
-          <p className="flex items-center gap-1">
-            <CgSandClock />
-            {duration}
-          </p>
-          <p className="flex items-center gap-1">
-            <BiBookAlt />
-            {durationDesc}
-          </p>
+          {pathname === "/blogs" ? (
+            <>
+              {author && (
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={author.image}
+                    alt={author.name}
+                    width={30}
+                    height={30}
+                    className="rounded-full"
+                  />
+
+                  <p className="font-semibold text-customGray">{author.name}</p>
+                </div>
+              )}
+              <p className="ml-auto text-xs text-gray-500">February 28, 2025</p>
+            </>
+          ) : (
+            <>
+              <p className="flex items-center gap-1">
+                <CgSandClock />
+                {duration}
+              </p>
+              <p className="flex items-center gap-1">
+                <BiBookAlt />
+                {durationDesc}
+              </p>
+            </>
+          )}
         </div>
 
         <p className="text-sm line-clamp-1 text-gray-500 capitalize">
@@ -75,30 +101,41 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
 
         <h3 className="text-lg font-bold capitalize text-primary">{title}</h3>
 
-        <div className="flex items-center gap-3 text-lg font-semibold">
-          <p className="text-accent">${price}</p>
-          <p className="text-gray-500 line-through">${oldPrice}</p>
-        </div>
+        {pathname !== "/blogs" && (
+          <div className="flex items-center gap-3 text-lg font-semibold">
+            <p className="text-accent">${price}</p>
+            <p className="text-gray-500 line-through">${oldPrice}</p>
+          </div>
+        )}
 
-        <div className="flex items-center justify-between">
-          {author && (
-            <div className="flex items-center gap-2">
-              <Image
-                src={author.image}
-                alt={author.name}
-                width={30}
-                height={30}
-                className="rounded-full"
-              />
+        {pathname !== "/blogs" ? (
+          <div className="flex items-center justify-between">
+            {author && (
+              <div className="flex items-center gap-2">
+                <Image
+                  src={author.image}
+                  alt={author.name}
+                  width={30}
+                  height={30}
+                  className="rounded-full"
+                />
 
-              <p className="font-semibold text-customGray">{author.name}</p>
-            </div>
-          )}
+                <p className="font-semibold text-customGray">{author.name}</p>
+              </div>
+            )}
 
-          <p className="ml-auto text-xs text-gray-500">
-            ({rating}) <RatingRO rating={rating} />
-          </p>
-        </div>
+            <p className="ml-auto text-xs text-gray-500">
+              ({rating}) <RatingRO rating={rating} />
+            </p>
+          </div>
+        ) : (
+          <div className="flex justify-between items-center   ">
+            <p className="text-lg text-accent">Read more...</p>
+            <p>
+              <BiLike />
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -107,13 +144,19 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
 const ItemCardHorizontal: FC<ItemCardProps> = (props) => {
   const { image, rating, title, price, oldPrice } = props;
   const { duration, durationDesc, description, tags, author } = props;
+  const pathname = usePathname();
 
   return (
-    <div className="border border-accent-light rounded-md flex">
+    <div className="border border-accent-light rounded-lg flex">
       <div className="relative w-1/3 h-56">
-        <Image className="object-cover" src={image} alt={title} fill />
+        <Image
+          className="object-cover rounded-l-lg"
+          src={image}
+          alt={title}
+          fill
+        />
 
-        {tags && (
+        {pathname !== "/blogs" && tags && (
           <div className="absolute top-3 left-3 flex flex-col space-y-3">
             {tags.map((tag) => (
               <p className="bg-accent text-white py-1 px-5 rounded-md">{tag}</p>
@@ -140,30 +183,42 @@ const ItemCardHorizontal: FC<ItemCardProps> = (props) => {
 
         <h3 className="text-lg font-bold capitalize text-primary">{title}</h3>
 
-        <div className="flex items-center gap-3 text-lg font-semibold">
-          <p className="text-accent">${price}</p>
-          <p className="text-gray-500 line-through">${oldPrice}</p>
-        </div>
+        {pathname !== "/blogs" && (
+          <div className="flex items-center gap-3 text-lg font-semibold">
+            <p className="text-accent">${price}</p>
 
-        <div className="flex items-center justify-between">
-          {author && (
-            <div className="flex items-center gap-2">
-              <Image
-                src={author.image}
-                alt={author.name}
-                width={30}
-                height={30}
-                className="rounded-full"
-              />
+            <p className="text-gray-500 line-through">${oldPrice}</p>
+          </div>
+        )}
 
-              <p className="font-semibold text-customGray">{author.name}</p>
-            </div>
-          )}
+        {pathname !== "/blogs" ? (
+          <div className="flex items-center justify-between">
+            {author && (
+              <div className="flex items-center gap-2">
+                <Image
+                  src={author.image}
+                  alt={author.name}
+                  width={30}
+                  height={30}
+                  className="rounded-full"
+                />
 
-          <p className="ml-auto text-xs text-gray-500">
-            ({rating}) <RatingRO rating={rating} />
-          </p>
-        </div>
+                <p className="font-semibold text-customGray">{author.name}</p>
+              </div>
+            )}
+
+            <p className="ml-auto text-xs text-gray-500">
+              ({rating}) <RatingRO rating={rating} />
+            </p>
+          </div>
+        ) : (
+          <div className="flex justify-between  items-center ">
+            <p className="text-lg text-accent">Read more...</p>
+            <p>
+              <BiLike />
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "5",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "7",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "8",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  },
+  {
+    "id": "9",
+    "title": "Technology",
+    "created_date": "August 20, 2022",
+    "image": "/images/books.jfif",
+    "description": "The Impact of Technology on the Workplace: How Technology is Changing...",
+    "author": {
+      "name": "Mohamed Khaled",
+      "image": "/images/avatar.jfif"
+    }
+  }
+]

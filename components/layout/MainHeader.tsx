@@ -80,7 +80,8 @@ const NavBar: React.FC = () => {
     <nav className="text-primary flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-10">
       <NavLink href="/" label="home" />
       <Courses />
-      <NavLink href="/books" label="books" />
+      <NavLink href="/books" label="ebooks" />
+      <NavLink href="/blogs" label="blogs" />
       <NavLink href="/about-us" label="about" />
       <NavLink href="/contact" label="contact" />
     </nav>

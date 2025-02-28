@@ -2,6 +2,7 @@
 import React from "react";
 import ItemCard from "./ItemCard";
 import { IItem } from "@/types/api/responses/Items";
+import { usePathname } from "next/navigation";
 
 interface IProps {
   items: IItem[];
@@ -9,6 +10,8 @@ interface IProps {
 }
 
 const ItemsList = ({ items, horizontal }: IProps) => {
+  const pathname = usePathname();
+
   return (
     <div
       className={`grid grid-cols-1  gap-4 ${

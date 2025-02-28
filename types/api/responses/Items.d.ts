@@ -17,6 +17,7 @@ export interface IItem {
   author: IItemCardAuthor;
 }
 
+
 export interface IItemCardAuthor {
   name: string;
   image: string;

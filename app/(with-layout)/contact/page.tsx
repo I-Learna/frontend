@@ -5,7 +5,7 @@ import ContactText from "@/components/routes/contact/ContactText";
 import ContactForm from "@/components/routes/contact/ContactForm";
 
 export const metadata: Metadata = {
-  title: "I Learna Contacts",
+  title: "iLearna Contacts",
   ...baseMetadata,
 };
 

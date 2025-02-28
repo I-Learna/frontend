@@ -5,7 +5,11 @@ import { Menu, MenuItem, Button } from "@mui/material";
 import sortOptions from "@/public/data/sortOptions.json";
 import { IoIosArrowDown } from "react-icons/io";
 
+import { usePathname } from "next/navigation";
+
 const Sort = () => {
+  const pathname = usePathname();
+
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [selectedSort, setSelectedSort] = useState("Highest to Lowest Rate");
   const open = Boolean(anchorEl);
@@ -20,6 +24,13 @@ const Sort = () => {
     }
     setAnchorEl(null);
   };
+  // Filter options based on the pathname
+  const filteredSortOptions =
+    pathname === "/blogs"
+      ? sortOptions.filter((option) =>
+          ["hlr", "lhr", "newest", "oldest"].includes(option.sortCode)
+        )
+      : sortOptions;
 
   return (
     <>
@@ -43,7 +54,7 @@ const Sort = () => {
           "aria-labelledby": "language-selector",
         }}
       >
-        {sortOptions.map((option) => (
+        {filteredSortOptions.map((option) => (
           <MenuItem
             key={option.sortCode}
             onClick={() => handleClose(option.sortLabel)}

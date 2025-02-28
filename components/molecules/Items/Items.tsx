@@ -15,7 +15,7 @@ interface IProps {
   data: IGetItemsResponse;
   filters: IItemsFiltersResponse;
   title: string;
-  productType: "recorded" | "live" | "books";
+  productType: "recorded" | "live" | "books" | "blogs" | "all";
 }
 
 const Items: FC<IProps> = (props) => {
