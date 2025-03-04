@@ -18,6 +18,8 @@ services:
   certbot:
     image: certbot/certbot
     container_name: certbot
+    networks:
+      - external
     volumes:
       - ./certbot/www:/var/www/certbot
       - ./certbot/conf:/etc/letsencrypt
