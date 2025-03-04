@@ -24,7 +24,7 @@ services:
     entrypoint: >
       sh -c "certbot certonly --webroot -w /var/www/certbot
       --email ahmednassar@ilearna.com
-      -d ilearna.com
+      -d www.ilearna.com
       --agree-tos --no-eff-email
       --force-renewal"
   frontend:
