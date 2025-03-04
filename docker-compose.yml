@@ -33,6 +33,8 @@ services:
       dockerfile: Dockerfile
     networks:
       - external
+    depends_on:
+      - frontend
     environment:
       - NEXT_PUBLIC_API_BASE_URL=http://backend:7000
 
