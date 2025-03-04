@@ -38,7 +38,7 @@ services:
     networks:
       - external
     environment:
-      - NEXT_PUBLIC_API_BASE_URL=http://backend:7000
+      - NEXT_PUBLIC_API_BASE_URL=https://www.ilearna.com/api
 
 networks:
   external:
