@@ -30,7 +30,7 @@ const InputCheckbox: FC<IProps> = ({ name, label, rules }) => {
       {/* Custom Checkbox */}
       <label
         htmlFor={name}
-        className={`w-6 h-6 border-2 rounded-md flex items-center justify-center cursor-pointer transition-all ${
+        className={`w-6 h-6 shrink-0 border-2 rounded-md flex items-center justify-center cursor-pointer transition-all ${
           isChecked ? "bg-gray-900 border-gray-900" : "border-gray-500"
         }`}
       >

@@ -15,13 +15,13 @@ interface IProps {
 
 const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
   return (
-    <section className="bg-primary p-10 text-white flex justify-between gap-10 items-stretch relative">
+    <section className="bg-primary p-5 2xl:p-10 text-white flex flex-col 2xl:flex-row justify-between gap-10 items-stretch relative">
       <div className="flex flex-col">
-        <h1 className="text-5xl font-semibold capitalize mb-3">
+        <h1 className="text-xl 2xl:text-5xl font-semibold capitalize mb-3">
           {basicInfo.courseTitle}
         </h1>
 
-        <p>{basicInfo.desc}</p>
+        <p className="text-md 2xl:text-lg mb-3">{basicInfo.desc}</p>
 
         <div className="mt-auto space-y-3">
           <p className="space-x-3 text-xl">
@@ -33,13 +33,13 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
             </span>
           </p>
 
-          <div className="flex gap-3">
+          <div className="flex flex-col 2xl:flex-row gap-3">
             <button className="btn btn-accent">Buy this course</button>
 
             <button className="btn btn-white-trans">Add To Cart</button>
 
             <button className="btn btn-white-trans">
-              <FaRegHeart className="text-2xl m-0 p-0" />
+              <FaRegHeart className="text-2xl 2xl:m-0 p-0 m-auto" />
             </button>
           </div>
         </div>
@@ -66,7 +66,7 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
         </button>
       </div>
 
-      <div className="absolute left-0 top-[95%] w-full bg-white text-primary shadow-lg rounded-lg p-4">
+      <div className="absolute left-0 top-[99%] 2xl:top-[95%] w-full bg-white text-primary shadow-lg rounded-lg p-4">
         <div className="flex justify-between">
           <div className="w-full px-5 border-r border-customGray">
             <h4 className="text-lg font-semibold">Modules</h4>
@@ -75,12 +75,12 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
             </p>
           </div>
 
-          <div className="w-full px-5 border-r border-customGray">
+          <div className="w-full px-5 2xl:border-r 2xl:border-customGray">
             <h4 className="text-lg font-semibold">Duration</h4>
             <p className="text-sm text-customGray">{basicInfo.duration}</p>
           </div>
 
-          <div className="w-full px-5 border-r border-customGray">
+          <div className="w-full px-5 border-r border-customGray hidden 2xl:block">
             <h4 className="text-lg font-semibold flex gap-1 items-center">
               <AiFillLike className="text-accent text-2xl" />
               {basicInfo.likes}
@@ -88,7 +88,7 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
             <p className="text-sm text-customGray">Liked this course</p>
           </div>
 
-          <div className="w-full px-5 border-r border-customGray">
+          <div className="w-full px-5 border-r border-customGray hidden 2xl:block">
             <h4 className="text-lg font-semibold flex gap-1 items-center">
               <IoStar className="text-accent text-2xl" />
               4.7
@@ -98,7 +98,7 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
             </p>
           </div>
 
-          <div className="w-full px-5 border-r border-customGray">
+          <div className="w-full px-5 border-r border-customGray hidden 2xl:block">
             <h4 className="text-lg font-semibold">
               {basicInfo.courseLevel.level} level
             </h4>
@@ -107,7 +107,7 @@ const CourseHeader: FC<IProps> = ({ basicInfo, author }) => {
             </p>
           </div>
 
-          <div className="w-full px-5">
+          <div className="w-full px-5 hidden 2xl:block">
             <h4 className="text-lg font-semibold">Enrolled People</h4>
             <p className="text-sm text-customGray">
               Enrolled ({basicInfo.enrolledCount})
