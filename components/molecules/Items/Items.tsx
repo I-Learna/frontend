@@ -1,15 +1,25 @@
 "use client";
-import ItemsFilter from "@/components/molecules/ItemsFilter/ItemsFilter";
-import Sort from "@/components/molecules/Sort";
-import Pagination from "@/components/ui/Pagination";
+
+import { FC } from "react";
+import dynamic from "next/dynamic";
 import {
   IGetItemsResponse,
   IItemsFiltersResponse,
 } from "@/types/api/responses/Items";
-import { FC } from "react";
-import GridOptions from "./GridOptions";
-import ItemsList from "./ItemsList";
 import { useItems } from "./useItems";
+// import ItemsFilter from "@/components/molecules/ItemsFilter/ItemsFilter";
+// import Sort from "@/components/molecules/Sort";
+// import Pagination from "@/components/ui/Pagination";
+// import GridOptions from "./GridOptions";
+// import ItemsList from "./ItemsList";
+
+const ItemsFilter = dynamic(
+  () => import("@/components/molecules/ItemsFilter/ItemsFilter")
+);
+const Sort = dynamic(() => import("@/components/molecules/Sort"));
+const Pagination = dynamic(() => import("@/components/ui/Pagination"));
+const GridOptions = dynamic(() => import("./GridOptions"));
+const ItemsList = dynamic(() => import("./ItemsList"));
 
 interface IProps {
   data: IGetItemsResponse;

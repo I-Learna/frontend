@@ -16,7 +16,7 @@ const CourseModules: FC<{ modules: ICourseModules }> = ({ modules }) => {
         <p className="mt-5">{modules.desc}</p>
       </section>
 
-      <section className="mt-12 border-2 border-gray-400 rounded-lg p-8 max-w-5xl">
+      <section className="mt-8 2xl:mt-12 border-2 border-gray-400 rounded-lg p-4 2xl:p-8 max-w-5xl">
         {modules.data.map((module, i) => (
           <div key={v4()}>
             <h2 className="text-lg font-semibold">
@@ -31,7 +31,7 @@ const CourseModules: FC<{ modules: ICourseModules }> = ({ modules }) => {
               </h6>
 
               {module.lessons.map((lesson) => (
-                <div key={v4()} className="flex justify-between">
+                <div key={v4()} className="flex justify-between gap-3">
                   <h6>{lesson.title}</h6>
                   <p>{lesson.duration}</p>
                 </div>
@@ -44,7 +44,7 @@ const CourseModules: FC<{ modules: ICourseModules }> = ({ modules }) => {
               </h6>
 
               {module.assessments.map((assessment) => (
-                <div key={v4()} className="flex justify-between">
+                <div key={v4()} className="flex justify-between gap-3">
                   <h6>{assessment.title}</h6>
                   <p>{assessment.duration}</p>
                 </div>
@@ -57,7 +57,7 @@ const CourseModules: FC<{ modules: ICourseModules }> = ({ modules }) => {
               </h6>
 
               {module.readings.map((reading) => (
-                <div key={v4()} className="flex justify-between">
+                <div key={v4()} className="flex justify-between gap-3">
                   <h6>{reading.title}</h6>
                   <p>{reading.duration}</p>
                 </div>

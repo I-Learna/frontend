@@ -9,9 +9,9 @@ const CourseReviews: FC<{ reviews: ICourseReviews }> = ({ reviews }) => {
     <section className="mt-16" id="reviews">
       <h2 className="text-2xl font-semibold">Learner reviews</h2>
 
-      <div className="mt-8 flex">
-        <div className="w-1/2">
-          <div className="p-10">
+      <div className="2xl:mt-5 flex flex-col 2xl:flex-row">
+        <div className="2xl:w-1/2">
+          <div className="p-3 2xl:p-10">
             <p className="text-gray-400">Reviews</p>
             <p className="text-4xl font-extrabold mt-3">
               {reviews.overview.rating}
@@ -84,9 +84,9 @@ const CourseReviews: FC<{ reviews: ICourseReviews }> = ({ reviews }) => {
           </div>
         </div>
 
-        <div className="w-1/2">
+        <div className="2xl:w-1/2">
           {reviews.reviewers.map((reviewer) => (
-            <div key={v4()} className="p-4">
+            <div key={v4()} className="p-3">
               <p className="text-gray-400 text-xs">{reviewer.date}</p>
 
               <div className="flex justify-between items-center">
