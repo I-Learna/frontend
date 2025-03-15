@@ -32,9 +32,7 @@ services:
       --agree-tos --no-eff-email
       --force-renewal"
   frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ahmednassar855/ilearna-frontend:latest
     networks:
       - external
     environment:
