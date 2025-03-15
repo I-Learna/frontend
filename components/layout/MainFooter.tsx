@@ -20,13 +20,13 @@ const MainFooter: React.FC = () => {
               <Logo white className="w-48" />
             </div>
             <p className="text-sm leading-relaxed">
-              i.learna is an innovative e-learning platform designed to connect
+              Industrial learning assocaiation ( ilearna ) is an innovative e-learning platform designed to connect
               learners with industry experts through live sessions, recorded
               courses, and personalized learning tracks. It offers a seamless
               experience for both students and instructors by providing tools
               for knowledge sharing, hands-on training, and professional
               development. With features like course customization, flexible
-              payment options, and community engagement, i.learna empowers users
+              payment options, and community engagement, iLearna empowers users
               to achieve their educational and career goals.
             </p>
           </div>

@@ -8,8 +8,8 @@ const baiJamjuree = Bai_Jamjuree({
 });
 
 export const metadata: Metadata = {
-  title: "I Learna Platform",
-  description: "I Learna Platform",
+  title: "iLearna Platform",
+  description: "iLearna Platform",
 };
 
 interface LayoutProps {

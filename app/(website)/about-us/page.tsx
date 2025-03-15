@@ -13,7 +13,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import ReviewMessage from "@/components/molecules/ReviewMessage";
 
 export const metadata: Metadata = {
-  title: "About I Learna",
+  title: "About iLearna",
   ...baseMetadata,
 };
 
@@ -50,7 +50,7 @@ const Page = () => {
         </PageTitle>
 
         <p className="font-light text-sm lg:ml-[4rem] relative lg:after:content-[''] lg:after:absolute lg:after:top-[6px] lg:after:left-[-4.5rem] lg:after:h-[2px] lg:after:w-[4rem] lg:after:bg-accent">
-          i.learna is your gateway to world-class education. We bring together
+          Industrial learning association ( iLearna ) is your gateway to world-class education. We bring together
           passionate instructors, ambitious learners, and cutting-edge tools to
           create a learning experience that s impactful, flexible, and tailored
           to your goals. Whether you re advancing your career, mastering a new
@@ -69,10 +69,10 @@ const Page = () => {
         <div className="bg-pink-100 h-[50vh] w-full max-w-3xl p-20 space-y-5">
           <h1 className="text-2xl font-bold">Hot It All Began</h1>
           <p className="font-light">
-            i.learna was founded with a simple idea: to make specialized
+            iLearna was founded with a simple idea: to make specialized
             knowledge accessible to everyone. Recognizing the gap between
             theoretical education and real-world skills, we set out to create a
-            platform that bridges this divide. Today, i.learna is a trusted
+            platform that bridges this divide. Today, iLearna is a trusted
             partner for learners and instructors across industries, helping
             individuals achieve their dreams and organizations upskill their
             teams.

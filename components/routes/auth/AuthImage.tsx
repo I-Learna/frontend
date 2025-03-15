@@ -8,8 +8,9 @@ const AuthImage = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <p className="absolute bottom-5 p-5 m-8 text-2xl text-justify font-semibold text-white">
-        Empowering professionals and learners with a seamless platform to gain
-        knowledge, connect with experts, and fuel their career growth!
+        Industrial learning association ( iLearna ) Empowering professionals and
+        learners with a seamless platform to gain knowledge, connect with
+        experts, and fuel their career growth!
       </p>
     </div>
   );

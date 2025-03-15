@@ -8,7 +8,7 @@ import { baseMetadata } from "@/utils/baseMetadata";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "I Learna",
+  title: "iLearna",
   ...baseMetadata,
 };
 

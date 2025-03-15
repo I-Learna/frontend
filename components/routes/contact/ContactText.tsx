@@ -4,15 +4,15 @@ import React from "react";
 const ContactText = () => {
   return (
     <div className="space-y-3 h-full flex flex-col justify-evenly max-w-2xl m-auto">
-      <PageTitle>We re here to help you cucceed</PageTitle>
+      <PageTitle>We are here to help you succeed</PageTitle>
 
       <p className="max-w-lg">
-        Email, call or complete the form to learn how ilearna can solve your
+        Email, call or complete the form to learn how iLearna can solve your
         messaging problem
       </p>
 
       <div className="font-normal space-y-2">
-        <p>info@ileana.io</p>
+        <p>info@ilearna.com</p>
         <p>+1 234 567 890 (Mon–Fri, 9 AM – 6 PM)</p>
       </div>
 
@@ -31,8 +31,8 @@ const ContactText = () => {
             feedback & suggestions
           </h3>
           <p className="font-light">
-            We value your feedback and are continuously working on to improve
-            ilearna. Your input is crucial in shaping the the future of ilearna
+            Industrial learning association ( iLearna ) value your feedback and are continuously working on to improve
+            iLearna. Your input is crucial in shaping the the future of iLearna
           </p>
         </div>
       </div>
