@@ -11,13 +11,14 @@ import { CgSandClock } from "react-icons/cg";
 interface ItemCardProps {
   id: string;
   image: string;
-  rating: number;
+  rating?: number;
   title: string;
-  price: string;
+  price?: string;
   oldPrice?: string;
-  duration: string;
-  durationDesc: string;
+  duration?: string;
+  durationDesc?: string;
   description: string;
+  createdAt?: string;
   tags?: string[];
   author?: IItemCardAuthor;
   horizontal?: boolean;
@@ -33,7 +34,14 @@ const ItemCard: FC<ItemCardProps> = (props) => {
 
 const ItemCardVertical: FC<ItemCardProps> = (props) => {
   const { id, image, rating, title, price, oldPrice } = props;
-  const { duration, durationDesc, description, tags, author } = props;
+  const { duration, durationDesc, description, tags, author, createdAt } =
+    props;
+  console.log(tags);
+  console.log(price);
+  console.log(oldPrice);
+  console.log(rating);
+  console.log(durationDesc);
+  console.log(duration);
 
   const router = useRouter();
   const pathname = usePathname();
@@ -48,7 +56,7 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
       <div className="relative w-full h-56">
         <Image className="object-cover" src={image} alt={title} fill />
 
-        {tags && (
+        {tags && price && (
           <div className="absolute top-3 left-3 flex flex-col space-y-3">
             {tags.map((tag) => (
               <p className="bg-accent text-white py-1 px-5 rounded-md">{tag}</p>
@@ -58,27 +66,30 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
       </div>
 
       <div className="p-4 space-y-2">
-        <div className="flex justify-between items-center text-gray-500 capitalize text-xs">
-          <p className="flex items-center gap-1">
-            <CgSandClock />
-            {duration}
-          </p>
-          <p className="flex items-center gap-1">
-            <BiBookAlt />
-            {durationDesc}
-          </p>
-        </div>
-
+        {duration && durationDesc && (
+          <div className="flex justify-between items-center text-gray-500 capitalize text-xs">
+            <p className="flex items-center gap-1">
+              <CgSandClock />
+              {duration}
+            </p>
+            <p className="flex items-center gap-1">
+              <BiBookAlt />
+              {durationDesc}
+            </p>
+          </div>
+        )}
         <p className="text-sm line-clamp-1 text-gray-500 capitalize">
           {description}
         </p>
 
         <h3 className="text-lg font-bold capitalize text-primary">{title}</h3>
 
-        <div className="flex items-center gap-3 text-lg font-semibold">
-          <p className="text-accent">${price}</p>
-          <p className="text-gray-500 line-through">${oldPrice}</p>
-        </div>
+        {price && (
+          <div className="flex items-center gap-3 text-lg font-semibold">
+            <p className="text-accent">${price}</p>
+            <p className="text-gray-500 line-through">${oldPrice}</p>
+          </div>
+        )}
 
         <div className="flex items-center justify-between">
           {author && (
@@ -92,12 +103,14 @@ const ItemCardVertical: FC<ItemCardProps> = (props) => {
               />
 
               <p className="font-semibold text-customGray">{author.name}</p>
+              <p>{createdAt}</p>
             </div>
           )}
-
-          <p className="ml-auto text-xs text-gray-500">
-            ({rating}) <RatingRO rating={rating} />
-          </p>
+          {price && (
+            <p className="ml-auto text-xs text-gray-500">
+              ({rating}) <RatingRO rating={rating} />
+            </p>
+          )}
         </div>
       </div>
     </div>

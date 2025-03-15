@@ -6,15 +6,16 @@ export interface IGetItemsResponse {
 export interface IItem {
   id: string;
   title: string;
-  duration: string;
-  durationDesc: string;
+  duration?: string;
+  durationDesc?: string;
   image: string;
-  rating: number;
-  price: string;
-  oldPrice: string;
+  rating?: number;
+  price?: string;
+  oldPrice?: string;
   description: string;
-  tags: string[];
+  tags?: string[];
   author: IItemCardAuthor;
+  createdAt?: string;
 }
 
 export interface IItemCardAuthor {

@@ -1,6 +1,7 @@
 import useIsFirstRender from "@/hooks/useIsFirstRender";
 import useUpdateEffect from "@/hooks/useUpdateEffect";
 import {
+  getBlogs,
   getBooks,
   getLiveCourses,
   getRecordedCourses,
@@ -11,7 +12,7 @@ import { useEffect, useState } from "react";
 
 interface IUseItemsProps {
   data: IGetItemsResponse;
-  productType: "recorded" | "live" | "books";
+  productType: "recorded" | "live" | "books" | "blogs";
 }
 
 export const useItems = (props: IUseItemsProps) => {
@@ -61,7 +62,10 @@ export const useItems = (props: IUseItemsProps) => {
       response = await getRecordedCourses(reqBody);
     } else if (productType == "live") {
       response = await getLiveCourses(reqBody);
-    } else {
+    } else if (productType == "blogs") {
+      response = await getBlogs(reqBody);
+    }
+    else {
       response = await getBooks(reqBody);
     }
 

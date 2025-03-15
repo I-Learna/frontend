@@ -20,15 +20,16 @@ const ItemsList = ({ items, horizontal }: IProps) => {
           key={item.id}
           id={item.id}
           title={item.title}
-          duration={item.duration}
-          durationDesc={item.durationDesc}
+          duration={item?.duration || ""}
+          durationDesc={item?.durationDesc || ""}
           image={item.image}
-          rating={item.rating}
-          price={item.price}
+          rating={item?.rating || 0}
+          price={item?.price || ""}
           oldPrice={item.oldPrice}
           description={item.description}
-          tags={item.tags}
+          tags={item.tags || [""]}
           author={item.author}
+          createdAt={item.createdAt || ""}
           horizontal={horizontal}
         />
       ))}

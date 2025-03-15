@@ -81,6 +81,8 @@ const NavBar: React.FC = () => {
       <NavLink href="/" label="home" />
       <Courses />
       <NavLink href="/books" label="books" />
+      <NavLink href="/blogs" label="blogs" />
+
       <NavLink href="/about-us" label="about" />
       <NavLink href="/contact" label="contact" />
     </nav>

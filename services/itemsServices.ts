@@ -1,5 +1,7 @@
 import recordedCourses from "@/public/data/recordedCourses.json";
 import liveCourses from "@/public/data/liveCourses.json";
+import blogs from "@/public/data/blogs.json";
+
 import filters from "@/public/data/filters.json";
 import books from "@/public/data/books.json";
 import recordedCourse from "@/public/data/RecordedCourseDetails.json";
@@ -62,6 +64,25 @@ export async function getRecordedCourseDetails(id: string) {
   return recordedCourse;
 }
 
-export async function getLiveCourseDetails(id: string) {}
+export async function getLiveCourseDetails(id: string) { }
 
-export async function getBookDetails(id: string) {}
+export async function getBookDetails(id: string) { }
+
+
+
+
+export async function getBlogs(
+  request: IGetItemsRequest
+): Promise<IGetItemsResponse> {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  return {
+    totalItems: 50,
+    items: blogs,
+  };
+}
+
+export async function getBlogsFilters(): Promise<IItemsFiltersResponse> {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  return filters;
+}
