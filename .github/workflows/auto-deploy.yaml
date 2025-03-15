@@ -45,4 +45,3 @@ jobs:
               docker-compose down
               docker pull ahmednassar855/ilearna-frontend
               docker-compose up -d
-              docker rmi $(docker images -f "dangling=true" -q)
