@@ -1,0 +1,130 @@
+{
+  "allCourses": 660,
+  "published": 125,
+  "pending": 85,
+  "drafted": 22,
+  "rejected": 9,
+  "courses": [
+    {
+      "id": 1,
+      "name": "Web Development - React Js",
+      "instructor": {
+        "id": 1,
+        "name": "John Doe"
+      },
+      "status": "published",
+      "createDate": "14-Apr-2024",
+      "stageStatus": "Live"
+    },
+    {
+      "id": 2,
+      "name": "Advanced JavaScript",
+      "instructor": {
+        "id": 2,
+        "name": "Jane Smith"
+      },
+      "status": "published",
+      "createDate": "20-Mar-2024",
+      "stageStatus": "Live"
+    },
+    {
+      "id": 3,
+      "name": "Python for Data Science",
+      "instructor": {
+        "id": 3,
+        "name": "Emily Johnson"
+      },
+      "status": "pending",
+      "createDate": "05-Feb-2024",
+      "stageStatus": "Under Review"
+    },
+    {
+      "id": 4,
+      "name": "Machine Learning Basics",
+      "instructor": {
+        "id": 4,
+        "name": "Michael Brown"
+      },
+      "status": "published",
+      "createDate": "10-Jan-2024",
+      "stageStatus": "Live"
+    },
+    {
+      "id": 5,
+      "name": "Fullstack Development with Next.js",
+      "instructor": {
+        "id": 1,
+        "name": "John Doe"
+      },
+      "status": "drafted",
+      "createDate": "22-Feb-2024",
+      "stageStatus": "In Progress"
+    },
+    {
+      "id": 6,
+      "name": "Cloud Computing with AWS",
+      "instructor": {
+        "id": 5,
+        "name": "Alice Williams"
+      },
+      "status": "published",
+      "createDate": "18-May-2024",
+      "stageStatus": "Live"
+    },
+    {
+      "id": 7,
+      "name": "Cybersecurity Fundamentals",
+      "instructor": {
+        "id": 6,
+        "name": "Robert Wilson"
+      },
+      "status": "rejected",
+      "createDate": "30-Jun-2024",
+      "stageStatus": "Rejected"
+    },
+    {
+      "id": 8,
+      "name": "Database Management with PostgreSQL",
+      "instructor": {
+        "id": 7,
+        "name": "Laura Martinez"
+      },
+      "status": "pending",
+      "createDate": "12-Jul-2024",
+      "stageStatus": "Under Review"
+    },
+    {
+      "id": 9,
+      "name": "UI/UX Design Principles",
+      "instructor": {
+        "id": 8,
+        "name": "David Anderson"
+      },
+      "status": "published",
+      "createDate": "01-Aug-2024",
+      "stageStatus": "Live"
+    },
+    {
+      "id": 10,
+      "name": "Artificial Intelligence with Python",
+      "instructor": {
+        "id": 9,
+        "name": "Emma Thomas"
+      },
+      "status": "drafted",
+      "createDate": "15-Sep-2024",
+      "stageStatus": "In Progress"
+    },
+    {
+      "id": 11,
+      "name": "DevOps and CI/CD Pipelines",
+      "instructor": {
+        "id": 10,
+        "name": "Chris Evans"
+      },
+      "status": "published",
+      "createDate": "05-Oct-2024",
+      "stageStatus": "Live"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import React, { FC, useEffect, useState } from "react";
 import { useDetectClickOutside } from "react-detect-click-outside";
 import { FiShoppingCart } from "react-icons/fi";
-import SearchInput from "../ui/SearchInput";
+import InputSearch from "../ui/InputSearch";
 
 const MainHeaderActions = () => {
   return (
@@ -18,7 +18,7 @@ const MainHeaderActions = () => {
 };
 
 const SearchAction: FC = () => {
-  return <SearchInput className="w-72" />;
+  return <InputSearch className="w-72" />;
 };
 
 const CartActions: FC = () => {

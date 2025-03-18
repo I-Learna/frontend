@@ -1,0 +1,101 @@
+{
+  "totals": {
+    "all": 650,
+    "active": 120,
+    "pending": 80,
+    "suspended": 20,
+    "rejected": 8
+  },
+  "records": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "status": "active",
+      "createdCourses": "1",
+      "averageRating": "4.5",
+      "lastActivity": "1 day ago"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "status": "pending",
+      "createdCourses": "0",
+      "averageRating": "4.2",
+      "lastActivity": "3 days ago"
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "status": "active",
+      "createdCourses": "2",
+      "averageRating": "3.8",
+      "lastActivity": "5 hours ago"
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "status": "suspended",
+      "createdCourses": "5",
+      "averageRating": "4.7",
+      "lastActivity": "1 week ago"
+    },
+    {
+      "id": "5",
+      "name": "Charlie Davis",
+      "email": "charlie.davis@example.com",
+      "status": "rejected",
+      "createdCourses": "0",
+      "averageRating": "3.5",
+      "lastActivity": "2 weeks ago"
+    },
+    {
+      "id": "6",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "status": "active",
+      "createdCourses": "3",
+      "averageRating": "4.9",
+      "lastActivity": "3 days ago"
+    },
+    {
+      "id": "7",
+      "name": "Emily White",
+      "email": "emily.white@example.com",
+      "status": "pending",
+      "createdCourses": "1",
+      "averageRating": "4.3",
+      "lastActivity": "Yesterday"
+    },
+    {
+      "id": "8",
+      "name": "Frank Harris",
+      "email": "frank.harris@example.com",
+      "status": "active",
+      "createdCourses": "2",
+      "averageRating": "3.9",
+      "lastActivity": "4 days ago"
+    },
+    {
+      "id": "9",
+      "name": "Grace Hall",
+      "email": "grace.hall@example.com",
+      "status": "suspended",
+      "createdCourses": "4",
+      "averageRating": "4.8",
+      "lastActivity": "5 hours ago"
+    },
+    {
+      "id": "10",
+      "name": "Henry Adams",
+      "email": "henry.adams@example.com",
+      "status": "active",
+      "createdCourses": "2",
+      "averageRating": "4.0",
+      "lastActivity": "2 days ago"
+    }
+  ]
+}

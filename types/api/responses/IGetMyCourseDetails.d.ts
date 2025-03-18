@@ -19,7 +19,7 @@ export interface MyCourseModule {
   lessons: MyCourseLesson[];
 }
 
-export interface MyCourse {
+export interface MyCourseDetails {
   id: number;
   title: string;
   author: MyCourseAuthor;

@@ -10,9 +10,10 @@ interface IProps {
   label: string;
   options: { value: string; label: string }[];
   rules?: object;
+  helperText?: string;
 }
 
-const InputSelect: FC<IProps> = ({ name, label, options, rules }) => {
+const InputSelect: FC<IProps> = ({ name, label, options, rules, helperText }) => {
   const { register, formState } = useFormContext();
   const error = formState.errors[name];
 
@@ -31,22 +32,17 @@ const InputSelect: FC<IProps> = ({ name, label, options, rules }) => {
             Select an option
           </option>
           {options.map((option) => (
-            <option
-              key={option.value}
-              value={option.value}
-              className="hover:bg-black"
-            >
+            <option key={option.value} value={option.value} className="hover:bg-black">
               {option.label}
             </option>
           ))}
         </select>
 
         {/* Custom Arrow */}
-        <TiArrowSortedDown
-          className="absolute right-3 top-2.5 transition-transform"
-          size={16}
-        />
+        <TiArrowSortedDown className="absolute right-3 top-2.5 transition-transform" size={16} />
       </div>
+
+      <p className="mt-1 text-sm text-accent font-semibold">{helperText}</p>
 
       <InputError error={error?.message?.toString()} />
     </div>

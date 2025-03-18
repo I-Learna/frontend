@@ -11,4 +11,5 @@ export interface IMyCourse {
     current: number;
   };
   tags: string[];
+  desc: string;
 }

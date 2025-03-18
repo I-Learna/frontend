@@ -24,7 +24,7 @@ const InputEmail: FC<IProps> = (props) => {
         id={props.name}
         type="email"
         placeholder={props.placeholder}
-        className="w-full text-sm py-2 px-2 pr-8 border rounded-md focus:outline-none focus:ring-1 font-normal border-accent-light"
+        className="inputField"
         {...register(props.name, { ...props.rules })}
       />
 

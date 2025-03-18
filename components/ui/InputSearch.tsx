@@ -1,9 +1,19 @@
 import React, { FC } from "react";
 import { CiSearch } from "react-icons/ci";
 
-const SearchInput: FC<{ className?: string }> = (props) => {
+interface IProps {
+  wrapperStyle?: string;
+  inputStyle?: string;
+  onChange?: () => void;
+}
+
+const InputSearch: FC<IProps> = (props) => {
+  const style =
+    props.inputStyle ??
+    "w-full text-sm py-2 px-2 pr-8 border border-customGray rounded-full focus:outline-none font-normal pl-8";
+
   return (
-    <div className={`relative ${props.className}`}>
+    <div className={`relative ${props.wrapperStyle}`}>
       <input
         type="text"
         placeholder="Search for anything"
@@ -15,4 +25,4 @@ const SearchInput: FC<{ className?: string }> = (props) => {
   );
 };
 
-export default SearchInput;
+export default InputSearch;
