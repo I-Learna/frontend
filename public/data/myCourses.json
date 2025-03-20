@@ -11,7 +11,8 @@
       "total": 7,
       "current": 5
     },
-    "tags": ["Basic"]
+    "tags": ["Basic"],
+    "desc": "40+ lessons, 4+ hours"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
       "total": 7,
       "current": 5
     },
-    "tags": ["Basic"]
+    "tags": ["Basic"],
+    "desc": "40+ lessons, 4+ hours"
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
       "total": 7,
       "current": 5
     },
-    "tags": ["Basic"]
+    "tags": ["Basic"],
+    "desc": "40+ lessons, 4+ hours"
   },
   {
     "id": 4,
@@ -53,7 +56,8 @@
       "total": 7,
       "current": 5
     },
-    "tags": ["Basic"]
+    "tags": ["Basic"],
+    "desc": "40+ lessons, 4+ hours"
   },
   {
     "id": 5,
@@ -67,6 +71,7 @@
       "total": 7,
       "current": 5
     },
-    "tags": ["Basic"]
+    "tags": ["Basic"],
+    "desc": "40+ lessons, 4+ hours"
   }
 ]

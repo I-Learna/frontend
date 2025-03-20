@@ -1,0 +1,91 @@
+{
+  "totals": {
+    "all": 650,
+    "active": 120,
+    "pending": 80,
+    "suspended": 20,
+    "rejected": 8
+  },
+  "records": [
+    {
+      "id": "1",
+      "name": "Jane Smith",
+      "email": "john.doe@example.com",
+      "status": "active",
+      "enrolledCourses": "2",
+      "lastActivity": "1 day ago"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "status": "active",
+      "enrolledCourses": "3",
+      "lastActivity": "3 days ago"
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "status": "active",
+      "enrolledCourses": "1",
+      "lastActivity": "5 hours ago"
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "status": "active",
+      "enrolledCourses": "4",
+      "lastActivity": "1 week ago"
+    },
+    {
+      "id": "5",
+      "name": "Charlie Davis",
+      "email": "charlie.davis@example.com",
+      "status": "active",
+      "enrolledCourses": "0",
+      "lastActivity": "2 weeks ago"
+    },
+    {
+      "id": "6",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "status": "active",
+      "enrolledCourses": "5",
+      "lastActivity": "3 days ago"
+    },
+    {
+      "id": "7",
+      "name": "Emily White",
+      "email": "emily.white@example.com",
+      "status": "active",
+      "enrolledCourses": "2",
+      "lastActivity": "Yesterday"
+    },
+    {
+      "id": "8",
+      "name": "Frank Harris",
+      "email": "frank.harris@example.com",
+      "status": "active",
+      "enrolledCourses": "1",
+      "lastActivity": "4 days ago"
+    },
+    {
+      "id": "9",
+      "name": "Grace Hall",
+      "email": "grace.hall@example.com",
+      "status": "active",
+      "enrolledCourses": "6",
+      "lastActivity": "5 hours ago"
+    },
+    {
+      "id": "10",
+      "name": "Henry Adams",
+      "email": "henry.adams@example.com",
+      "status": "active",
+      "enrolledCourses": "3",
+      "lastActivity": "2 days ago"
+    }
+  ]
+}

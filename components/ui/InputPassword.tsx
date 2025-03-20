@@ -40,7 +40,7 @@ const InputPassword: React.FC<InputProps> = (props) => {
           id={props.name}
           type={isPlainText ? "text" : "password"}
           placeholder={props.placeholder}
-          className="w-full py-2 px-2 text-sm font-normal pr-8 border rounded-md focus:outline-none border-accent-light focus:ring-blue-500"
+          className="inputField"
           {...register(props.name, { ...props.rules })}
         />
 

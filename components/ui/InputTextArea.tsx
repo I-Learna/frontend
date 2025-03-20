@@ -6,8 +6,10 @@ import InputError from "./InputError";
 
 interface IProps {
   name: string;
+  label?: string;
   placeholder?: string;
   rules?: object;
+  helperText?: string;
 }
 
 const InputTextArea: FC<IProps> = (props) => {
@@ -17,13 +19,15 @@ const InputTextArea: FC<IProps> = (props) => {
 
   return (
     <div>
+      <InputLabel label={props.label ?? ""} name={props.name} />
       <textarea
         id={props.name}
         placeholder={props.placeholder}
         rows={4}
-        className="w-full text-sm py-2 px-2 pr-8 border rounded-md focus:outline-none focus:ring-1 font-normal border-accent-light"
+        className="inputField"
         {...register(props.name, { ...props.rules })}
       />
+      <p className="mt-1 text-sm text-accent font-semibold">{props.helperText}</p>
 
       <InputError error={error?.message?.toString()} />
     </div>

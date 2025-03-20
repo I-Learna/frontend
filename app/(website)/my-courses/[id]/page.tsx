@@ -4,7 +4,7 @@ import ModuleList from "@/components/routes/my-courses/ModuleList";
 import VideoPlayer from "@/components/ui/VideoPlayer";
 import { getMyCourseDetails } from "@/services/userServices";
 import {
-  MyCourse,
+  MyCourseDetails,
   MyCourseLesson,
   MyCourseModule,
 } from "@/types/api/responses/IGetMyCourseDetails";
@@ -20,7 +20,7 @@ interface PageProps {
 const Page: FC<PageProps> = ({ params }) => {
   const itemId = decrypt(params.id);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [courseDetails, setCourseDetails] = useState<MyCourse | null>();
+  const [courseDetails, setCourseDetails] = useState<MyCourseDetails | null>();
   const [modules, setModules] = useState<MyCourseModule[] | null>();
   const [lesson, setLesson] = useState<Partial<MyCourseLesson> | null>();
 
@@ -57,24 +57,24 @@ const Page: FC<PageProps> = ({ params }) => {
   }
 
   return (
-    <div className="p-5">
-      <div className="flex justify-between gap-5">
-        <section>
-          <div className="h-[30rem] mb-5 rounded-xl overflow-hidden">
-            <VideoPlayer url={lesson.videoURL} />
-          </div>
+    <>
+      <section className="p-5 w-full">
+        <div className="h-[30rem] w-full mb-5 rounded-xl overflow-hidden">
+          <VideoPlayer url={lesson.videoURL} />
+        </div>
 
-          <h2 className="text-2xl font-semibold">{lesson?.title}</h2>
-          <p className="text-sm text-gray-500">
-            {courseDetails.author.name} {courseDetails.author.title}
-          </p>
+        <h2 className="text-2xl font-semibold">{lesson?.title}</h2>
+        <p className="text-sm text-gray-500">
+          {courseDetails.author.name} {courseDetails.author.title}
+        </p>
 
-          <p className="mt-3">{lesson?.overview}</p>
-        </section>
+        <p className="mt-3">{lesson?.overview}</p>
+      </section>
 
+      <section className="p-5 shrink-0">
         <ModuleList modules={modules} selectLesson={selectLesson} />
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

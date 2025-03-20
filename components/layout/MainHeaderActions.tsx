@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import React, { FC, useEffect, useState } from "react";
 import { useDetectClickOutside } from "react-detect-click-outside";
 import { FiShoppingCart } from "react-icons/fi";
-import SearchInput from "../ui/SearchInput";
+import InputSearch from "../ui/InputSearch";
 
 const MainHeaderActions = () => {
   return (
@@ -18,7 +18,7 @@ const MainHeaderActions = () => {
 };
 
 const SearchAction: FC = () => {
-  return <SearchInput className="w-72" />;
+  return <InputSearch />;
 };
 
 const CartActions: FC = () => {
@@ -45,20 +45,11 @@ const ProfileActions: FC = () => {
   return (
     <div className="shrink-0">
       <button onClick={toggleMenu}>
-        <Image
-          width={1024}
-          height={1024}
-          src="/images/avatar.jfif"
-          alt="user avatar"
-          className="w-8 rounded-full"
-        />
+        <Image width={1024} height={1024} src="/images/avatar.jfif" alt="user avatar" className="w-8 rounded-full" />
       </button>
 
       {isOpen && (
-        <div
-          className="absolute top-[105%] right-5 drop-shadow-lg w-80 bg-white rounded-md"
-          ref={clickOutsideRef}
-        >
+        <div className="absolute top-[105%] right-5 drop-shadow-lg w-80 bg-white rounded-md" ref={clickOutsideRef}>
           <div className="p-4 border-b">
             <p className="text-accent text-sm font-semibold">Hello,</p>
             <p className="text-sm font-semibold text-primary">Ahmed Mohamed</p>

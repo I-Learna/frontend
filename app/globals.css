@@ -20,7 +20,7 @@
   }
 
   .app-wrapper {
-    @apply 2xl:w-[1440px] 2xl:m-auto mx-1;
+    @apply 2xl:w-[1440px] 2xl:mx-auto mx-1;
   }
 
   .btn {
@@ -37,6 +37,10 @@
 
   .btn-white-trans {
     @apply text-white border border-white hover:bg-white hover:text-accent;
+  }
+
+  .inputField {
+    @apply w-full text-sm py-2 px-2 pr-8 border rounded-md focus:outline-none focus:ring-1 font-normal border-accent-light;
   }
 }
 

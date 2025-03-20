@@ -11,6 +11,7 @@ interface IProps {
   placeholder?: string;
   rules?: object;
   children?: React.ReactNode;
+  helperText?: string;
 }
 
 const InputFile: FC<IProps> = (props) => {
@@ -48,6 +49,8 @@ const InputFile: FC<IProps> = (props) => {
           <span>{fileName || props.placeholder || "Upload File"}</span>
         </div>
       </div>
+
+      <p className="mt-1 text-sm text-accent font-semibold">{props.helperText}</p>
 
       {props.children}
 
