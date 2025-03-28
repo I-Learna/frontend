@@ -31,11 +31,22 @@ export default function Layout({ children }: { children: ReactNode }) {
               </div>
             }
           >
-            <SideMenuLink href="/admin/courses">All Courses</SideMenuLink>
-            <SideMenuLink href="/admin/courses/new-course">Create Recorded Course</SideMenuLink>
-            <SideMenuLink href="#">Create Live Course</SideMenuLink>
+            <SideMenuLink href="/admin/courses">
+              All Recorded Courses
+            </SideMenuLink>
+            <SideMenuLink href="/admin/courses/new-course">
+              Create Recorded Course
+            </SideMenuLink>
+            <SideMenuLink href="/admin/live-courses">
+              All Live Courses
+            </SideMenuLink>
+            <SideMenuLink href="/admin/live-courses/new-live-course">
+              Create Live Course
+            </SideMenuLink>
             <SideMenuLink href="#">Create Track Course</SideMenuLink>
-            <SideMenuLink href="#">Create E-Book</SideMenuLink>
+            <SideMenuLink href="/admin/ebooks/new-ebook">
+              Create E-Book
+            </SideMenuLink>
             <SideMenuLink href="#">Featured Courses</SideMenuLink>
             <SideMenuLink href="#">Certificates</SideMenuLink>
           </SidebarMenu>
@@ -48,10 +59,18 @@ export default function Layout({ children }: { children: ReactNode }) {
               </div>
             }
           >
-            <SideMenuLink href="/admin/users/students">Students Management</SideMenuLink>
-            <SideMenuLink href="/admin/users/instructors">Instructors Management</SideMenuLink>
-            <SideMenuLink href="/admin/users/freelancers">Freelancers Management</SideMenuLink>
-            <SideMenuLink href="/admin/users/admins">Admins & Moderators</SideMenuLink>
+            <SideMenuLink href="/admin/users/students">
+              Students Management
+            </SideMenuLink>
+            <SideMenuLink href="/admin/users/instructors">
+              Instructors Management
+            </SideMenuLink>
+            <SideMenuLink href="/admin/users/freelancers">
+              Freelancers Management
+            </SideMenuLink>
+            <SideMenuLink href="/admin/users/admins">
+              Admins & Moderators
+            </SideMenuLink>
           </SidebarMenu>
 
           <SidebarMenu
@@ -62,8 +81,12 @@ export default function Layout({ children }: { children: ReactNode }) {
               </div>
             }
           >
-            <SideMenuLink href="/admin/users/students">Earnings & Payouts</SideMenuLink>
-            <SideMenuLink href="/admin/users/students">Student Purchases</SideMenuLink>
+            <SideMenuLink href="/admin/users/students">
+              Earnings & Payouts
+            </SideMenuLink>
+            <SideMenuLink href="/admin/users/students">
+              Student Purchases
+            </SideMenuLink>
           </SidebarMenu>
 
           <SidebarMenu

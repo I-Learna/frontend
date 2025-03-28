@@ -1,0 +1,71 @@
+{
+  "allCourses": 660,
+  "liveCourses": [
+    {
+      "id": 1,
+      "name": "Web Development - React Js",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 2,
+      "name": "Advanced JavaScript",
+      "instructorNumber": 2,
+      "createDate": "14-May-2024"
+    },
+    {
+      "id": 3,
+      "name": "Python for Data Science",
+      "instructorNumber": 1,
+      "createDate": "14-Jun-2024"
+    },
+    {
+      "id": 4,
+      "name": "Machine Learning Basics",
+      "instructorNumber": 0,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 5,
+      "name": "Fullstack Development with Next.js",
+      "instructorNumber": 14,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 6,
+      "name": "Cloud Computing with AWS",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 7,
+      "name": "Cybersecurity Fundamentals",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 8,
+      "name": "Database Management with PostgreSQL",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 9,
+      "name": "UI/UX Design Principles",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 10,
+      "name": "Artificial Intelligence with Python",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    },
+    {
+      "id": 11,
+      "name": "DevOps and CI/CD Pipelines",
+      "instructorNumber": 4,
+      "createDate": "14-Apr-2024"
+    }
+  ]
+}

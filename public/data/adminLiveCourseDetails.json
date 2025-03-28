@@ -1,0 +1,66 @@
+{
+  "title": "Course Title",
+  "image": "",
+  "desc": "lorem ipsum",
+  "level": "",
+  "industry": "",
+  "descipline": "",
+  "about": "",
+  "learningBenifits": "",
+  "preRequirements": "",
+  "extraDetails": "",
+  "modules": [
+    {
+      "id": 1,
+      "title": "Lorem Ipusum",
+      "desc": "lorem ipsum",
+      "price": 60,
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Lorem Ipusum",
+          "duration": "20",
+          "videoURL": ""
+        },
+        {
+          "id": 1,
+          "title": "Lorem Ipusum",
+          "duration": "30",
+          "videoURL": ""
+        },
+        {
+          "id": 1,
+          "title": "Lorem Ipusum",
+          "duration": "20",
+          "videoURL": ""
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Lorem Ipusum",
+      "desc": "lorem ipsum",
+      "price": 60,
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Lorem Ipusum",
+          "duration": "20",
+          "videoURL": ""
+        },
+        {
+          "id": 1,
+          "title": "Lorem Ipusum",
+          "duration": "30",
+          "videoURL": ""
+        },
+        {
+          "id": 1,
+          "title": "Lorem Ipusum",
+          "duration": "20",
+          "videoURL": ""
+        }
+      ]
+    }
+  ]
+}

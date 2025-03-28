@@ -24,12 +24,18 @@ const CourseModule: FC<IProps> = (props) => {
   return (
     <div className="bg-gray-50 border m-auto rounded-lg p-5">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-accent text-2xl font-semibold">{props.details?.title ?? "New Module"}</h3>
+        <h3 className="text-accent text-2xl font-semibold">
+          {props.details?.title ?? "New Module"}
+        </h3>
         {props.details && <RiDeleteBinLine className="text-red-500 text-2xl" />}
       </div>
       <section className="space-y-4 p-3 border-2 rounded-lg mb-4">
         <FormProvider {...formMethods}>
-          <InputText name="title" label="Module Name" placeholder="Module Name" />
+          <InputText
+            name="title"
+            label="Module Name"
+            placeholder="Module Name"
+          />
 
           <InputTextArea
             name="desc"
@@ -37,7 +43,11 @@ const CourseModule: FC<IProps> = (props) => {
             placeholder="Write a short summary (e.g., Learn advanced refining methods through real-world case studies)."
           />
 
-          <InputText name="price" label="Module Price (USD)" placeholder="Module price" />
+          <InputText
+            name="price"
+            label="Module Price (USD)"
+            placeholder="Module price"
+          />
 
           {props.details?.lessons.map((lesson) => (
             <CourseLesson key={v4()} details={lesson} />
