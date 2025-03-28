@@ -33,6 +33,7 @@ services:
       --force-renewal"
   frontend:
     image: ahmednassar855/ilearna-frontend:latest
+    restart: always
     networks:
       - external
     environment:

@@ -42,6 +42,10 @@ jobs:
               set -e
               cd /opt/frontend
               docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+              gh auth setup-git
+              git checkout main
+              git pull
               docker-compose down
+              docker rmi -f ahmednassar855/ilearna-frontend:latest 
               docker pull ahmednassar855/ilearna-frontend
-              docker-compose up -d
+              docker-compose up -d 
